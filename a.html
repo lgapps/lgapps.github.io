@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://qt-kr.m.lgaccount.com/membership-spx-webapp/customer/terms_language_list -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Document</title>
+	
+<script type="text/javascript">
+function getParams(){
+    var url = window.location.search.replace('?','');
+    var params = {};
+    var urlArray = url.split('&');
+
+    for(var i in urlArray)
+    {
+      var param = urlArray[i].split('=');
+      params[param[0]] = param[1]; 
+    }
+	console.log("test " + url);
+	
+	if(params["lan"] == "ko") {
+		console.log("ko");
+		location.href="https://lgapps.github.io/terms_language_list?test=asd";
+	}
+	
+    console.log(params);
+	return params;
+}
+getParams();
+</script></head>
+
+<body>
+<h1>Test 웹페이지</h1>
+</body>
+</html>

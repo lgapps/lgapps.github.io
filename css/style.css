@@ -25,20 +25,22 @@ input.buttonBackImg {
   background-position: center center;
   background-size: contain;
   border: none;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 10px;
   padding: 10px;
   background-color: white;
 }
 
 #select_files {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   margin: 10px;
 }
 
 select {
-  width: 200px;
-  align-self: center;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 #contents {
@@ -54,13 +56,13 @@ ol.countrylist {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  max-width: 250px;
+  max-width: 450px;
   width: 100%;
 }
 
 ul.countrylist li,
 ol.countrylist li {
-  padding: 5px 25px 5px 25px;
+  padding: 5px 25px 5px 15px;
   margin-bottom: 5px;
   border-bottom: 1px solid #efefef;
   font-size: 15px;

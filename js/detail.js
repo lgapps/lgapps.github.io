@@ -77,7 +77,7 @@ $(document).ready(function () {
       $("#contents").load(recentUrl);
     },
     error: function (xhr, status, error) {
-      console.log("AJAX request fail:", error);
+      console.log("log. no file. load default page.");
       var url_default = "./default_en-US.html";
       $("#contents_default").load(url_default);
       $("#select_files").hide();

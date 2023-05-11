@@ -119,14 +119,16 @@ $(document).ready(function () {
   const testUL = document.createElement("ul");
   for (let countryCode in countries) {
     for (let langInfo of countries[countryCode]) {
-      createList(langInfo, testUL, "index");
+      //createList(langInfo, testUL, "index");
+      testURL("index", countryCode, langInfo.locale);
     }
   }
 
   console.log("log. test. inputDetailUrl list");
   for (let countryCode in countries) {
     for (let langInfo of countries[countryCode]) {
-      createList(langInfo, testUL, "detail");
+      //createList(langInfo, testUL, "detail");
+      testURL("detail", countryCode, langInfo.locale);
     }
   }
   document.body.appendChild(testUL);

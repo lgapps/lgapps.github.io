@@ -1,0 +1,66 @@
+.buttonBack {
+  border: none;
+  line-height: 2.5;
+  padding: 0 10px;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #000;
+  border-radius: 10px;
+  background-color: #fff;
+  float: right;
+  box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
+}
+
+.buttonBack:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.buttonBack:active {
+  background-color: rgb(212, 208, 208);
+}
+
+#select_files {
+  display: flex;
+  justify-content: left;
+  margin: 10px;
+}
+
+select {
+  width: 200px;
+  align-self: center;
+}
+
+#contents {
+  margin: 10px;
+}
+
+#contents_default {
+  margin: 10px;
+}
+
+ul.countrylist,
+ol.countrylist {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  max-width: 250px;
+  width: 100%;
+}
+
+ul.countrylist li,
+ol.countrylist li {
+  padding: 5px 25px 5px 25px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #efefef;
+  font-size: 15px;
+}
+
+/* ul.countrylist li:last-child,
+  ol.countrylist li:last-child {
+      border-bottom: 0px;
+  } */
+
+/* a {
+      text-decoration: underline;
+      color: blue;
+  } */

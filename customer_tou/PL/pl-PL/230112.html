@@ -1,0 +1,943 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:"\@맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"메모 텍스트 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"머리글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"바닥글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"메모 주제 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"풍선 도움말 텍스트 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:9.0pt;
+	font-family:"맑은 고딕";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:40.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+span.Char
+	{mso-style-name:"메모 텍스트 Char";
+	mso-style-link:"메모 텍스트";}
+span.Char0
+	{mso-style-name:"머리글 Char";
+	mso-style-link:머리글;}
+span.Char1
+	{mso-style-name:"바닥글 Char";
+	mso-style-link:바닥글;}
+span.Char2
+	{mso-style-name:"메모 주제 Char";
+	mso-style-link:"메모 주제";
+	font-weight:bold;}
+span.Char3
+	{mso-style-name:"풍선 도움말 텍스트 Char";
+	mso-style-link:"풍선 도움말 텍스트";
+	font-family:"맑은 고딕";}
+.MsoChpDefault
+	{font-family:"맑은 고딕";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=KO link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Umowa
+licencyjna użytkownika końcowego</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Niniejsza
+Umowa licencyjna użytkownika końcowego („EULA”) jest umową prawną między
+użytkownikiem (osobą fizyczną lub pojedynczym podmiotem) a LG Electronics Inc.
+(„LGE”), spółką zarejestrowaną w Korei Południowej z siedzibą pod adresem LG
+Twin Towers, 128 Yeoui-daero, Yeoungdeungpo-gu, Seoul 07336, Korea Południowa,
+dotyczącą oprogramowania Sync on Mobile, wstępnie załadowanego lub
+zainstalowanego na tym urządzeniu, które obejmuje oprogramowanie komputerowe
+lub aplikację mobilną i może obejmować powiązane nośniki, materiały drukowane,
+dokumentację „online” lub elektroniczną związaną z korzystaniem przez
+użytkownika z tego urządzenia („Oprogramowanie LG”). </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>To
+urządzenie do normalnego działania wymaga użycia oprogramowania LG. KORZYSTAJĄC
+Z OPROGRAMOWANIA LG, AKCEPTUJESZ WARUNKI NINIEJSZEJ UMOWY EULA. JEŚLI NIE
+AKCEPTUJESZ NINIEJSZYCH WARUNKÓW, NIE KORZYSTAJ Z OPROGRAMOWANIA LG. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>ZASTRZEŻENIE
+PRAW I WŁASNOŚCI.</span></b><span lang=PL style='line-height:140%;font-family:
+"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>LGE
+zastrzega sobie wszelkie prawa, które nie zostały wyraźnie przyznane
+użytkownikowi w niniejszej umowie EULA. Oprogramowanie LG jest chronione
+prawami autorskimi oraz innymi prawami i traktatami dotyczącymi własności
+intelektualnej. LGE lub jej spółki stowarzyszone i jej licencjodawcy są
+właścicielami tytułu, praw autorskich i innych praw własności intelektualnej do
+Oprogramowania LG. Oprogramowanie LG jest licencjonowane, a nie sprzedawane.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>UDZIELANIE
+LICENCJI.</span></b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>
+</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Firma
+LGE przyznaje następujące prawa pod warunkiem przestrzegania przez użytkownika
+wszystkich warunków niniejszej umowy EULA: Możesz używać, uzyskiwać dostęp i
+uruchamiać jedną kopię Oprogramowania LG wstępnie załadowanego, zainstalowanego
+lub pobranego na to urządzenie, wyłącznie w zakresie niezbędnym do korzystania
+z urządzenia.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Niektóre
+komponenty Oprogramowania LG są dostarczane na warunkach licencji typu open
+source. W takich przypadkach postanowienia licencji open source mogą mieć
+pierwszeństwo przed niektórymi warunkami niniejszej umowy EULA. Możesz
+wyświetlić szczegółowe informacje dotyczące licencji open source na dole ekranu
+głównego urządzenia mobilnego lub na prawym pasku tytułowym w menu „Informacje
+o wersji” urządzenia.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>OGRANICZENIA
+PRAW UŻYTKOWNIKA KOŃCOWEGO.</span></b><span lang=PL style='line-height:140%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Użytkownikowi
+nie wolno kopiować, odtwarzać kodu źródłowego, dekompilować, dezasemblować ani
+w inny sposób próbować odkryć kodu źródłowego lub algorytmów Oprogramowania LG
+(z wyjątkiem i tylko w zakresie, w jakim taka czynność jest wyraźnie dozwolona
+przez obowiązujące prawo, niezależnie od tego ograniczenia), lub modyfikować
+ani wyłączać jakichkolwiek funkcji Oprogramowania LG ani tworzyć dzieł
+pochodnych w oparciu o Oprogramowanie LG. Użytkownik nie może wynajmować,
+wydzierżawiać, użyczać, udzielać sublicencji ani świadczyć komercyjnych usług
+hostingowych za pomocą Oprogramowania LG. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>AKTUALIZACJE.</span></b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Niniejsza
+umowa EULA dotyczy aktualizacji, uzupełnień i elementów dodatkowych (jeśli
+istnieją) Oprogramowania LG, które firma LGE może dostarczyć lub udostępnić
+użytkownikowi po dacie nabycia urządzenia LG lub zainstalowania Oprogramowania
+na urządzeniu mobilnym, chyba że wraz z taką aktualizacją określimy inne
+warunki. Aby korzystać z Oprogramowania LG zidentyfikowanego jako
+uaktualnienie, należy najpierw uzyskać licencję na Oprogramowanie LG wskazane
+przez LGE jako kwalifikujące się do uaktualnienia. Po uaktualnieniu nie możesz
+już korzystać z Oprogramowania LG, które stanowiło podstawę uprawnienia do
+uaktualnienia. Aktualizacja oprogramowania LG może dodać nowe funkcje, a w
+niektórych przypadkach może usunąć istniejące funkcje.</span></p>
+
+<p class=MsoCommentText style='margin-left:7.1pt;line-height:140%;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>NALEŻY
+ZWRÓCIĆ UWAGĘ, ŻE FIRMA LG ELECTRONICS INC. NIE PRZYJMUJE ŻADNEJ
+ODPOWIEDZIALNOŚCI ZA AKTUALIZACJE, GDY BŁĄD ZOSTAŁ SPOWODOWANY PRZEZ
+UŻYTKOWNIKA (NP. NIEPRZESTRZEGANIE NASZYCH WYTYCZNYCH DOTYCZĄCYCH AKTUALIZACJI)
+LUB JEŚLI FIRMA LG ELECTRONICS INC. DOPUŚCIŁA SIĘ ZANIEDBANIA.  W niektórych
+ograniczonych przypadkach Aktualizacja oprogramowania będzie oferowana
+wyłącznie przez operatora sieci; a taka Aktualizacja oprogramowania będzie
+podlegać stosunkom umownym z operatorem sieci.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>PRZENIESIENIE
+OPROGRAMOWANIA.</span></b><span lang=PL style='line-height:140%;font-family:
+"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>W
+przypadku przeniesienia praw wynikających z niniejszej umowy EULA do
+Oprogramowania LG przyznanych w niej osobom trzecim w związku ze sprzedażą lub
+przeniesieniem urządzenia, do którego dołączono Oprogramowanie LG, przekazanie
+musi obejmować całe Oprogramowanie LG (w tym wszystkie części składowe, nośniki
+i materiały drukowane, wszelkie aktualizacje, niniejszą umowę EULA).
+Przekazanie nie może być przekazaniem pośrednim, takim jak przesyłka. Przed
+przeniesieniem użytkownik końcowy otrzymujący Oprogramowanie LG musi wyrazić
+zgodę na wszystkie warunki umowy EULA.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>WYŁĄCZENIE
+GWARANCJI.</span></b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>
+</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>UŻYTKOWNIK
+POTWIERDZA, ŻE OPROGRAMOWANIE LG NIE ZOSTAŁO OPRACOWANE W CELU SPEŁNIENIA
+INDYWIDUALNYCH WYMAGAŃ. LGE NIE GWARANTUJE ANI NIE SKŁADA ŻADNYCH OŚWIADCZEŃ
+DOTYCZĄCYCH DOSTĘPNOŚCI, UŻYTKOWANIA, AKTUALNOŚCI, BEZPIECZEŃSTWA, WAŻNOŚCI,
+DOKŁADNOŚCI ANI NIEZAWODNOŚCI LUB WYNIKÓW UŻYTKOWANIA LUB W INNY SPOSÓB
+POWIĄZANYCH DLA OPROGRAMOWANIA LG LUB JAKICHKOLWIEK TREŚCI W NIM ZAWARTYCH.
+JAKIEKOLWIEK MATERIAŁY WSTĘPNIE ZAŁADOWANE, POBRANE LUB UZYSKANE W INNY SPOSÓB
+PRZY UŻYCIU OPROGRAMOWANIA LG SĄ UŻYTKOWANE NA WŁASNE UZNANIE I RYZYKO
+UŻYTKOWNIKA I PONOSI ON WYŁĄCZNĄ ODPOWIEDZIALNOŚĆ ZA WSZELKIE USZKODZENIA
+URZĄDZENIA LUB UTRATĘ DANYCH WYNIKAJĄCE Z POBRANIA TAKICH MATERIAŁÓW LUB WYKORZYSTANIA
+OPROGRAMOWANIA LG. JEŚLI NIE OKREŚLONO ODDZIELNIE W PISEMNEJ WYRAŹNEJ
+OGRANICZONEJ GWARANCJI DOŁĄCZONEJ DO URZĄDZENIA, OPROGRAMOWANIE DOSTARCZANE
+PRZEZ LGE JEST DOSTARCZANE „W STANIE, W JAKIM JEST” I „W MIARĘ DOSTĘPNOŚCI”,
+BEZ JAKICHKOLWIEK WYRAŹNYCH LUB DOROZUMIANYCH GWARANCJI. W NAJSZERSZYM ZAKRESIE
+MOŻLIWYM ZGODNIE Z OBOWIĄZUJĄCYM PRAWEM LGE WYŁĄCZA WSZELKIE GWARANCJE, WYRAŹNE
+LUB DOROZUMIANE, W TYM MIĘDZY INNYMI DOROZUMIANE GWARANCJE PRZYDATNOŚCI
+HANDLOWEJ, PRZYDATNOŚCI DO OKREŚLONEGO CELU, BRAKU NARUSZENIA LUB INNEGO
+NARUSZENIA PRAW. NIEKTÓRE JURYSDYKCJE NIE ZEZWALAJĄ NA WYŁĄCZENIA LUB
+OGRANICZENIA OKRESU OBOWIĄZYWANIA DOROZUMIANEJ GWARANCJI, WIĘC POWYŻSZE
+OGRANICZENIA LUB WYŁĄCZENIA MOGĄ NIE MIEĆ ZASTOSOWANIA. ŻADNE PORADY ANI
+INFORMACJE, USTNE ANI PISEMNE, UZYSKANE PRZEZ UŻYTKOWNIKA OD LGE NIE BĘDĄ
+UZNANE ZA ZMIANĘ NINIEJSZEGO WYŁĄCZENIA GWARANCJI ANI ZA UTWORZENIE
+JAKIEJKOLWIEK GWARANCJI.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>DOSTĘP I
+DOSTĘPNOŚĆ; OGRANICZENIE WIEKOWE.</span></b><span lang=PL style='line-height:
+140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Istnieje
+możliwość, że firma LG będzie zmuszona przerwać lub zaprzestać świadczenia
+usług dostępnych za pośrednictwem Oprogramowania LG albo zawiesić lub
+ograniczyć korzystanie z całości lub części Oprogramowania LG, jeśli uznamy to
+za konieczne ze względów technicznych, operacyjnych, bezpieczeństwa, prawnych
+lub regulacyjnych. Dostępność usług związanych z niektórymi Oprogramowaniami LG
+może zależeć od działania zewnętrznego dostawcy usług telekomunikacyjnych, na
+które firma LGE nie ma wpływu. Użytkownik jest odpowiedzialny za dokonanie
+wszelkich ustaleń niezbędnych do uzyskania dostępu do Oprogramowania LG. LGE
+nie ponosi żadnej odpowiedzialności za jakiekolwiek straty lub szkody, które
+mogą spowodować takie czynniki zewnętrzne.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Ponadto
+niektóre funkcje Oprogramowania LG mogą wymagać dostępu urządzenia do Internetu
+i mogą podlegać ograniczeniom nałożonym przez sieć lub dostawcę Internetu.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Aby
+korzystać z Oprogramowania LG lub uzyskiwać do niego dostęp, Użytkownik musi
+mieć ukończone 14 (czternaście) lat. Jeśli Użytkownik ma co najmniej 14
+(czternaście), ale mniej niż 18 (osiemnaście), musi mieć zgodę rodzica lub
+opiekuna prawnego na korzystanie z Oprogramowania LG i akceptację niniejszej
+umowy EULA. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>OGRANICZENIE
+ODPOWIEDZIALNOŚCI.</span></b><span lang=PL style='line-height:140%;font-family:
+"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>LGE
+NIE PONOSI ODPOWIEDZIALNOŚCI ZA JAKIEKOLWIEK SZKODY WYNIKAJĄCE Z UŻYTKOWANIA
+LUB NIEMOŻNOŚCI KORZYSTANIA Z OPROGRAMOWANIA LG ORAZ TREŚCI LUB LINKÓW, W TYM
+MIĘDZY INNYMI SZKODY SPOWODOWANE LUB ZWIĄZANE Z BŁĘDAMI, POMINIĘCIAMI LGE,
+PRZERWAMI, WADAMI, OPÓŹNIENIAMI W DZIAŁANIU LUB TRANSMISJI, WIRUSAMI, AWARIAMI
+LINII ORAZ ZA WSZELKIE INNE BEZPOŚREDNIE, POŚREDNIE, SZCZEGÓLNE, PRZYPADKOWE,
+PRZYKŁADOWE LUB WTÓRNE SZKODY, NAWET JEŚLI FIRMA LGE ZOSTAŁA POWIADOMIONA O
+MOŻLIWOŚCI WYSTĄPIENIA TAKICH SZKÓD. NIEKTÓRE JURYSDYKCJE NIE ZEZWALAJĄ NA
+WYŁĄCZENIE LUB OGRANICZENIE SZKÓD PRZYPADKOWYCH LUB WTÓRNYCH, WIĘC POWYŻSZE
+OGRANICZENIE LUB WYKLUCZENIE MOŻE NIE MIEĆ ZASTOSOWANIA. NIEZALEŻNIE OD
+POWYŻSZEGO, CAŁKOWITA ODPOWIEDZIALNOŚĆ FIRMY LGE WOBEC UŻYTKOWNIKA ZA WSZELKIE
+STRATY, SZKODY I PRZYCZYNY DZIAŁAŃ, W TYM MIĘDZY INNYMI STRATY KONTRAKTOWE,
+DELIKTOWE LUB INNE, WYNIKAJĄCE Z KORZYSTANIA Z TEGO URZĄDZENIA, JEGO
+OPROGRAMOWANIA LG I APLIKACJI OSÓB TRZECICH, NIE PRZEKRACZA STU DOLARÓW
+AMERYKAŃSKICH (100 USD). POWYŻSZE OGRANICZENIA, WYKLUCZENIA I WYŁĄCZENIA
+ODPOWIEDZIALNOŚCI, W TYM PUNKTY 6, 9 I 10, MAJĄ ZASTOSOWANIE W MAKSYMALNYM
+ZAKRESIE DOZWOLONYM PRZEZ OBOWIĄZUJĄCE PRAWO, NAWET JEŚLI JAKIEKOLWIEK ŚRODEK
+ZARADCZY NIE SPEŁNI SWOJEGO PODSTAWOWEGO CELU.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>OBOWIĄZUJĄCE
+PRAWO; ROZSTRZYGANIE SPORÓW (NIE DOTYCZY REZYDENTÓW USA)</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Wszelkie
+skargi dotyczące korzystania z Oprogramowania LG można zgłaszać pod
+następującymi danymi kontaktowymi:</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:23.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-18.0pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>adres
+e-mail: lg-synconmobile@lge.com</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Wszelkie
+reklamacje będziemy rozpatrywać zgodnie z następującą procedurą: nadamy
+reklamacji numer identyfikacyjny oraz niezwłocznie prześlemy potwierdzenie
+otrzymania reklamacji, nie później jednak niż w ciągu siedemdziesięciu dwóch
+(72) godzin po otrzymania reklamacji. Niezwłocznie zbadamy reklamację. Jeśli
+uznamy reklamację, niezwłocznie zapewnimy środki zaradcze i wyślemy odpowiedź
+dotyczącą zasadności Twojej skargi w ciągu trzydziestu (30) dni od otrzymania
+Twojej reklamacji. Jeśli nie uznamy reklamacji lub nie będzie możliwe jej
+szybkie rozpatrzenie, odnotujemy reklamację i nasze stanowisko w protokole,
+który wyślemy wraz z naszą odpowiedzią na zasadność Twojej reklamacji. Jeśli
+nie uznamy reklamacji, przedstawimy również powody w naszej odpowiedzi dotyczącej
+zasadności reklamacji. Jeśli użytkownik nie zgodzi się z odrzuceniem
+reklamacji, może złożyć zażalenie zgodnie z poniższymi postanowieniami
+dotyczącymi rozstrzygania sporów.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Z
+wyjątkiem zakresu zabronionego przez prawo lokalne, wszelkie spory wynikające z
+lub w związku z niniejszymi Warunkami użytkowania, w tym wszelkie kwestie
+dotyczące ich istnienia, ważności lub zakończenia, będą kierowane i ostatecznie
+rozstrzygane w drodze arbitrażu (i) omawiane i ostatecznie rozstrzygane w
+drodze arbitrażu zgodnie z Regulaminem Koreańskiej Rady Arbitrażu Handlowego
+(który to regulamin uważa się za włączony do niniejszej klauzuli przez
+odniesienie), (ii) gdzie liczba arbitrów wynosi jeden, (iii) siedzibą lub
+miejscem prawnym arbitrażu będzie Seul, Korea Południowa, (iv) językiem
+postępowania arbitrażowego będzie język angielski oraz (v) prawem właściwym dla
+umowy będzie prawo materialne Republiki Korei.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>W
+zakresie wymaganym przez prawo lokalne, aby arbitraż był ważny i prawnie
+skuteczny jako środek rozstrzygania sporów, w tym przeciwko konsumentowi,
+uznaje się, że odniesienie do Regulaminu Koreańskiej Rady Arbitrażu Handlowego
+w punkcie (i) powyżej odnosi się do regulaminu najważniejszego organu
+arbitrażowego („Lokalne zasady arbitrażu”) w kraju Użytkownika oraz (iii) będą
+uważane za odnoszące się do stolicy kraju użytkownika.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Użytkownik
+może rozstrzygać z nami spory wyłącznie na zasadzie indywidualnej, a nie jako
+powód lub członek grupy w jakimkolwiek rzekomym postępowaniu grupowym lub
+reprezentacyjnym.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Jeśli
+użytkownik jest konsumentem i mieszka w Wielkiej Brytanii lub Unii
+Europejskiej, może wszcząć postępowanie prawne w odniesieniu do niniejszych
+Warunków użytkowania przed sądami kraju, w którym mieszka. Ponadto, jeśli
+mieszka w Wielkiej Brytanii lub Unii Europejskiej, a my przekierujemy tę
+witrynę internetową do kraju, w którym mieszka, skorzysta z wszelkich
+bezwzględnie obowiązujących przepisów prawa kraju, w którym mieszka. Żadne z
+postanowień niniejszych Warunków nie wpływa na prawa użytkownika jako konsumenta
+do polegania na takich bezwzględnie obowiązujących przepisach prawa lokalnego.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Jeśli
+użytkownik jest konsumentem i mieszka w Norwegii, w przypadku sporu może
+skontaktować się z Norweską Radą Konsumentów (lub innymi odpowiednimi organami
+odwoławczymi). Więcej informacji można znaleźć na stronie
+https://www.forbrukerradet.no/.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Jeśli
+użytkownik jest konsumentem zamieszkałym w Unii Europejskiej i chce uzyskać
+więcej informacji na temat internetowego rozstrzygania sporów, należy
+skorzystaj z tego łącza do strony internetowej Komisji Europejskiej:
+http://ec.europa.eu/consumers/odr/. To łącze jest udostępniane zgodnie z
+wymogami rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 524/2013,
+wyłącznie w celach informacyjnych.  Nie jesteśmy zobowiązani do udziału w
+internetowym rozstrzyganiu sporów.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>10.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>ROZWIĄZANIE.</span></b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Niniejsza
+umowa EULA obowiązuje do momentu jej rozwiązania. Prawa użytkownika, wynikające
+z niniejszej Licencji, wygasną automatycznie bez powiadomienia ze strony LGE,
+jeśli użytkownik nie będzie przestrzegać któregokolwiek z warunków niniejszej
+umowy EULA. Ponadto LGE, według własnego uznania, może w dowolnym momencie
+zawiesić lub wypowiedzieć wszelkie usługi związane z umową EULA. Zastrzegamy
+sobie również prawo do zmiany umowy EULA w dowolnym momencie (w tym między
+innymi poprzez ograniczenie lub przerwanie niektórych funkcji związanych z
+umową EULA). Po rozwiązaniu niniejszej umowy EULA użytkownik musi zaprzestać
+wszelkiego korzystania z oprogramowania LG razem z urządzeniem. Możesz
+rozwiązać niniejszą umowę EULA, usuwając całość lub część Oprogramowania LG.
+Nie ponosimy żadnej odpowiedzialności z tytułu jakichkolwiek zmian w umowie
+EULA ani zawieszenia lub zakończenia dostępu użytkownika do usług związanych z
+umową EULA lub korzystania z nich. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-GB style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>11.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>OBOWIĄZUJĄCY
+JĘZYK.</span></b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>
+</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Wszelkie
+tłumaczenia niniejszej umowy EULA są wykonywane zgodnie z wymaganiami
+lokalnymi, a w przypadku rozbieżności między wersją angielską a wersją inną niż
+angielska, wersja angielska niniejszej umowy EULA będzie obowiązywać w zakresie,
+w jakim nie jest to zabronione przez prawo lokalne w jurysdykcji użytkownika.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>12.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>KONTROLA
+EKSPORTU.</span></b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>
+</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Użytkownik
+przyjmuje do wiadomości, że Oprogramowanie LG podlega ograniczeniom eksportowym
+różnych krajów. Użytkownik zgadza się przestrzegać wszystkich obowiązujących
+przepisów międzynarodowych i krajowych, które mają zastosowanie do
+Oprogramowania LG, w tym wszystkich obowiązujących praw i przepisów dotyczących
+ograniczeń eksportowych.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>13.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>CAŁOŚĆ
+POROZUMIENIA; ROZDZIELNOŚĆ; RÓŻNE.</span></b><span lang=PL style='line-height:
+140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Niniejsza
+umowa EULA stanowi całość umowy między użytkownikiem a firmą LGE w odniesieniu
+do Oprogramowania LG i zastępuje wszelkie wcześniejsze lub równoczesne ustne
+lub pisemne komunikaty, propozycje i oświadczenia dotyczące Oprogramowania LG
+lub wszelkich innych kwestii objętych niniejszą umową EULA. Jeśli jakiekolwiek
+postanowienie niniejszej umowy EULA zostanie uznane za nieobowiązujące,
+nieważne, niewykonalne lub niezgodne z prawem, pozostałe postanowienia
+zachowują pełną moc i skuteczność. Pobieranie aktualizacji, dostęp do Oprogramowania
+LG i korzystanie z niego zależą od połączenia danych urządzenia. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>14.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>ROZSTRZYGANIE
+SPORÓW DLA MIESZKAŃCÓW STANÓW ZJEDNOCZONYCH.</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=PL
+style='line-height:140%;font-family:"Times New Roman",serif'>Postanowienia
+ogólne. W interesie rozstrzygania sporów między użytkownikiem a firmą LGE w
+najdogodniejszy i najbardziej efektywny kosztowo sposób użytkownik i firma LGE
+zgadzają się, że wszelkie spory powstałe w związku z niniejszą umową EULA będą
+rozstrzygane w drodze wiążącego arbitrażu. Arbitraż jest bardziej nieformalny
+niż proces sądowy. Arbitraż wykorzystuje neutralnego arbitra zamiast sędziego
+lub ławy przysięgłych, może pozwalać na bardziej ograniczone dochodzenie niż w
+sądzie i może podlegać bardzo ograniczonej kontroli ze strony sądów. Arbitrzy
+mogą przyznać takie samo odszkodowanie i zadośćuczynienie, jakie może przyznać
+sąd. Nasza zgoda na rozstrzyganie sporów arbitrażowych obejmuje, ale nie
+ogranicza się do wszystkich roszczeń wynikających lub związanych z jakimkolwiek
+aspektem niniejszej umowy EULA, czy to na podstawie umowy, deliktu, ustawy,
+oszustwa, wprowadzenia w błąd lub jakiejkolwiek innej teorii prawnej, i
+niezależnie od tego, czy roszczenia powstały w trakcie lub po wygaśnięciu
+niniejszej umowy EULA. UŻYTKOWNIK ROZUMIE I ZGADZA SIĘ, ŻE PRZYSTĘPUJĄC DO
+NINIEJSZEJ UMOWY LICENCYJNEJ, UŻYTKOWNIK I LGE ZRZEKAJĄ SIĘ PRAWA DO ROZPRAWY Z
+ŁAWĄ PRZYSIĘGŁYCH LUB UCZESTNICTWA W POZWIE ZBIOROWYM.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=PL
+style='line-height:140%;font-family:"Times New Roman",serif'>Wyjątki. Niezależnie
+od sekcji 16(a), obie strony zgadzają się, że nic w niniejszym dokumencie nie
+będzie uważane za zrzeczenie się, wykluczenie lub w inny sposób ograniczenie
+któregokolwiek z naszych praw do (i) wniesienia indywidualnego powództwa w
+sądzie ds. drobnych roszczeń, (ii) podejmowania działań egzekucyjnych za
+pośrednictwem odpowiednich agencji federalnych, stanowych lub lokalnych, jeśli
+takie działania są dostępne, (iii) ubiegania się o zabezpieczenie w sądzie lub
+(iv) wnoszenie pozwu do sądu w celu zajęcia się naruszeniem własności
+intelektualnej roszczenia. </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(c)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Arbiter.
+Wszelkie spory arbitrażowe między użytkownikiem a firmą LGE będą podlegać
+„Zasadom AAA” Amerykańskiego Stowarzyszenia Arbitrażowego („AAA”),
+zmodyfikowanym niniejszą umową EULA i będą zarządzane przez AAA. Zasady AAA i
+formularze zgłoszeniowe są dostępne online na stronie www.adr.org, po kontakcie
+telefonicznym z AAA pod numerem 1-800-778-7879 lub po kontakcie z LGE.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(d)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=PL
+style='line-height:140%;font-family:"Times New Roman",serif'>Zawiadomienie;
+Proces. Strona, która zamierza skorzystać z arbitrażu, musi najpierw wysłać
+drugiej stronie pisemne zawiadomienie o sporze, listem poleconym lub za
+pośrednictwem firmy Federal Express (wymagany podpis), lub w przypadku, gdy nie
+mamy fizycznego adresu Użytkownika w dokumentacji, za pomocą poczty
+elektronicznej („Zawiadomienie”). Adres LGE dla zawiadomień to: LG Electronics,
+USA, Inc. Attn: Legal Department-Arbitration, 1000 Sylvan Avenue Englewood
+Cliffs, NJ 07632. Powiadomienie musi (i) opisywać charakter i podstawę
+roszczenia lub sporu; oraz (ii) określa konkretne żądane zadośćuczynienia
+(„Żądanie”). Zgadzamy się dołożyć starań w dobrej wierze, aby bezpośrednio
+rozwiązać roszczenie, ale jeśli nie osiągniemy porozumienia w tym celu w ciągu
+30 dni od otrzymania zawiadomienia, Użytkownik lub firma LGE mogą wszcząć postępowanie
+arbitrażowe. W trakcie arbitrażu kwota jakiejkolwiek oferty ugody złożonej
+przez użytkownika lub firmę LGE nie zostanie ujawniona arbitrowi, dopóki
+arbiter nie podejmie ostatecznej decyzji i orzeczenia, jeśli takie zostanie
+wydane.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(e)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Opłaty. W
+przypadku rozpoczęcia arbitrażu zgodnie z niniejszą umową EULA firma LGE zwróci
+użytkownikowi opłatę za złożenie wniosku, chyba że wartość roszczenia
+przekracza 25&nbsp;000 USD, w którym to przypadku o uiszczaniu jakichkolwiek
+opłat decyduje Regulamin AAA. Wszelkie rozprawy arbitrażowe będą odbywać się w
+uzgodnionym miejscu z zastrzeżeniem, że jeśli roszczenie opiewa na kwotę
+10&nbsp;000 USD lub mniej, użytkownik może wybrać, czy arbitraż będzie
+prowadzony (i) wyłącznie na podstawie dokumentów przedłożonych arbitrowi; (ii)
+poprzez przesłuchanie telefoniczne bez stawiennictwa; lub (iii) w drodze
+przesłuchania osobistego zgodnie z Zasadami AAA w hrabstwie (lub gminie) adresu
+rozliczeniowego użytkownika. Jeśli arbiter uzna, że przedmiot roszczenia lub
+zadośćuczynienie, o które wnioskowano w Żądaniu, jest niepoważne lub wniesione
+w niewłaściwym celu (mierzonym według standardów określonych w Federalnych
+Zasadach Postępowania Cywilnego 11(b)), wówczas zapłata wszystkich opłat będzie
+podlegać Zasadom AAA. W takiej sytuacji użytkownik zgadza się zwrócić firmie
+LGE wszystkie koszty wcześniej przez nią poniesione, które w innym przypadku
+stanowią zobowiązanie do zapłaty zgodnie z Zasadami AAA. Niezależnie od sposobu
+prowadzenia arbitrażu arbiter wydaje pisemną decyzję z uzasadnieniem,
+wystarczającą do wyjaśnienia istotnych ustaleń i wniosków, na których opiera
+się decyzja i ewentualny wyrok. Arbiter może wydawać orzeczenia i rozstrzygać
+spory co do płatności i zwrotu opłat lub wydatków w dowolnym momencie
+postępowania oraz na wniosek jednej ze stron złożony w ciągu 14 dni od wydania
+orzeczenia przez arbitra co do istoty sprawy.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(f)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Brak
+pozwów zbiorowych. UŻYTKOWNIK I LGE ZGADZAJĄ SIĘ, ŻE KAŻDY MOŻE WNOSIĆ
+ROSZCZENIA PRZECIWKO DRUGIEJ STRONIE TYLKO INDYWIDUALNIE, A NIE JAKO POWÓD LUB CZŁONEK
+ZBIORU W ŻADNYM POSTĘPOWANIU ZBIOROWYM LUB PRZEDSTAWICIELSKIM. Ponadto, o ile
+zarówno użytkownik, jak i LGE nie uzgodnią inaczej, arbiter nie może
+konsolidować roszczeń więcej niż jednej osoby i nie może w inny sposób
+przewodniczyć żadnej formie postępowania przedstawicielskiego lub zbiorowego.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(g)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=PL
+style='line-height:140%;font-family:"Times New Roman",serif'>Rezygnacja.
+Użytkownik może zrezygnować z tej procedury rozstrzygania sporów. W przypadku
+rezygnacji ani Użytkownik, ani LG nie mogą wymagać od drugiej strony udziału w
+postępowaniu arbitrażowym. Aby zrezygnować, należy wysłać powiadomienie do
+firmy LG nie później niż 30 dni kalendarzowych od daty zakupu produktu przez
+pierwszego nabywcę konsumenta: (i) wysyłając e-mail na adres [optout@lge.com] o
+temacie: „Arbitration Opt Out” lub (ii) dzwoniąc na numer [1-800-980-2973]. W
+wiadomości e-mailu rezygnacji lub telefonicznie należy podać: (a) imię i
+nazwisko oraz adres; (b) datę aktywacji Usługi; oraz (c) datę zakończenia
+świadczenia Usługi; (d) nazwę modelu produktu lub numer modelu; oraz (e)
+odpowiednio numer IMEI lub MEID lub numer seryjny (numer IMEI, MEID lub numer
+seryjny można znaleźć, wyjmując baterię z urządzenia zgodnie z opisem w
+Podręczniku użytkownika). Poczta elektroniczna i telefon to jedyne dwie formy
+powiadomienia, które będą skuteczne, aby zrezygnować z tej procedury
+rozstrzygania sporów. Jeśli użytkownik nie zrezygnuje, akceptuje wszystkie
+warunki Ograniczonej gwarancji, w tym wiążące postanowienie dotyczące arbitrażu
+opisane powyżej.  </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>(h)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=PL
+style='line-height:140%;font-family:"Times New Roman",serif'>Modyfikacje. W
+przypadku gdy LGE dokona w przyszłości jakiejkolwiek zmiany tego postanowienia
+dotyczącego arbitrażu (innej niż zmiana adresu LGE do zawiadomienia),
+użytkownik może odrzucić taką zmianę, wysyłając nam pisemne powiadomienie w
+ciągu 30 dni od zmiany na adres LGE do zawiadomienia, w którym w takim przypadku
+konto użytkownika w LGE zostanie natychmiast zamknięte, a niniejsze
+postanowienie dotyczące arbitrażu, w brzmieniu obowiązującym bezpośrednio przed
+odrzuconymi przez użytkownika poprawkami, pozostanie w mocy.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>15.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Ograniczone
+prawa użytkowników końcowych rządu Stanów Zjednoczonych.</span></b><span
+lang=PL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>Oprogramowanie
+LG jest objęte niniejszą licencją wyłącznie z „ograniczonymi prawami” i jako
+„elementy komercyjne” składające się z „oprogramowania komercyjnego” i
+„dokumentacji oprogramowania komercyjnego” tylko z tymi prawami, które zostały
+przyznane wszystkim innym użytkownikom końcowym zgodnie z warunkami niniejszej
+umowy EULA. Wszystkie produkty są dostarczane tylko z „ograniczonymi prawami”
+tylko z tymi prawami, które są przyznawane wszystkim innym użytkownikom
+końcowym zgodnie z warunkami zawartymi w niniejszym dokumencie. Całe
+oprogramowanie i produkty objęte niniejszą umową podlegają przepisom Federal
+Acquisition Regulation (FAR) 52.227.19.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=PL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=PL style='font-family:"Times New Roman",serif'>16.
+Kontaktowanie się z firmą LGE w sprawie niniejszej Umowy licencyjnej
+użytkownika końcowego</span></b></p>
+
+<p class=MsoNormal><span lang=PL style='font-family:"Times New Roman",serif'>W
+przypadku pytań lub uwag, dotyczących niniejszej umowy EULA, skorzystaj z
+informacji kontaktowych w celu uzyskania wsparcia w danym regionie za
+pośrednictwem naszego oficjalnego adresu e-mail [lg-synconmobile@lge.com]. </span></p>
+
+<p class=MsoNormal><span lang=PL style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

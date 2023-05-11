@@ -1,0 +1,938 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:"\@맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"메모 텍스트 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"머리글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"바닥글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"메모 주제 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"풍선 도움말 텍스트 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:9.0pt;
+	font-family:"맑은 고딕";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:40.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+span.Char
+	{mso-style-name:"메모 텍스트 Char";
+	mso-style-link:"메모 텍스트";}
+span.Char0
+	{mso-style-name:"머리글 Char";
+	mso-style-link:머리글;}
+span.Char1
+	{mso-style-name:"바닥글 Char";
+	mso-style-link:바닥글;}
+span.Char2
+	{mso-style-name:"메모 주제 Char";
+	mso-style-link:"메모 주제";
+	font-weight:bold;}
+span.Char3
+	{mso-style-name:"풍선 도움말 텍스트 Char";
+	mso-style-link:"풍선 도움말 텍스트";
+	font-family:"맑은 고딕";}
+.MsoChpDefault
+	{font-family:"맑은 고딕";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=KO link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Licentieovereenkomst
+voor eindgebruikers</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Deze
+softwarelicentieovereenkomst voor eindgebruikers (&quot;EULA&quot; afgekort in
+het Engels) is een wettelijke overeenkomst tussen u (als individu of een
+afzonderlijke entiteit) en LG Electronics Inc. (&quot;LGE&quot;), een in
+Zuid-Korea geregistreerd bedrijf met hoofdkantoor te LG Twin Towers, 128
+Yeoui-daero, Yeoungdeungpo-gu, Seoul 07336, Zuid-Korea, voor Sync on
+Mobilesoftware die vooraf op uw apparaat is geladen of geïnstalleerd, waaronder
+computersoftware of mobiele applicatie en mogelijk bijbehorende media, gedrukt
+materiaal en &quot;online&quot; of elektronische documentatie in verband met uw
+gebruik van dit apparaat (&quot;LG-software&quot;). </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Dit
+apparaat vereist het gebruik van LG-software voor zijn normale werking. DOOR DE
+LG-SOFTWARE TE GEBRUIKEN, AANVAARDT U DE VOORWAARDEN VAN DEZE EULA. ALS U DEZE
+VOORWAARDEN NIET ACCEPTEERT, GEBRUIK DE LG-SOFTWARE DAN NIET. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>VOORBEHOUD
+VAN RECHTEN EN EIGENDOM.</span></b><span lang=NL style='line-height:140%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>LGE
+behoudt zich alle rechten voor die niet uitdrukkelijk in deze EULA aan u worden
+verleend. LG-software wordt beschermd door het auteursrecht en andere wetten en
+verdragen op het gebied van intellectueel eigendom. LGE of aan haar gelieerde
+bedrijven en haar licentiegevers zijn eigenaar van de eigendomstitel, het
+auteursrecht en andere intellectuele eigendomsrechten van de LG-software.
+LG-software wordt in licentie gegeven en niet verkocht.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>LICENTIEVERLENING.</span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>LGE
+verleent u de volgende rechten op voorwaarde dat u alle voorwaarden van deze
+EULA naleeft: U mag één exemplaar van de vooraf gedownloade, geïnstalleerde of
+gedownloade LG-software op dit apparaat gebruiken, openen en uitvoeren, uitsluitend
+voor zover dat nodig is voor het gebruik van uw apparaat.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Sommige
+onderdelen van de LG-software worden geleverd onder open-source
+licentievoorwaarden. In dergelijke gevallen kunnen bepalingen van open
+source-licenties voorrang hebben op sommige bepalingen van deze EULA. U kunt de
+gedetailleerde informatie over de open source licentie bekijken onderaan het
+hoofdscherm van uw mobiele apparaat of rechts in de titelbalk van het menu
+“Versie-info” van uw apparaat.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>BEPERKINGEN
+OP DE RECHTEN VAN DE EINDGEBRUIKER.</span></b><span lang=NL style='line-height:
+140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>U
+mag de LG-software niet kopiëren, reverse-engineeren, decompileren, demonteren
+of anderszins proberen de broncode of algoritmen van de LG-software te
+achterhalen (behalve en alleen voor zover deze activiteit uitdrukkelijk is
+toegestaan door de toepasselijke wetgeving onverminderd deze beperking), of
+functies van de LG-software wijzigen of uitschakelen, of afgeleide werken
+creëren op basis van de LG-software. Het is niet toegestaan de LG-software te
+verhuren, leasen, uitlenen, in sublicentie te geven of commerciële
+hostingdiensten met LG-software aan te bieden. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>UPGRADES.</span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Deze
+EULA is van toepassing op updates, supplementen en add-on componenten (indien
+van toepassing) van de LG-software die LGE aan u kan verstrekken of aan u
+beschikbaar kan stellen na de datum waarop u uw LG-apparaat verkrijgt of op uw
+mobiele apparaat installeert, tenzij wij samen met een dergelijke upgrade
+andere voorwaarden verstrekken. Om de LG-software te gebruiken die als upgrade
+is aangemerkt, dient u eerst een licentie te hebben voor de LG-software die
+door LGE is aangemerkt als in aanmerking komend voor de upgrade. Na de upgrade
+mag u de LG-software die aan de basis lag van uw upgrade niet meer gebruiken.
+De upgrade van LG-software kan nieuwe functies toevoegen en in sommige gevallen
+bestaande functies verwijderen.</span></p>
+
+<p class=MsoCommentText style='margin-left:7.1pt;line-height:140%;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>LET
+OP: LG ELECTRONICS INC. AANVAARDT GEEN AANSPRAKELIJKHEID OF
+VERANTWOORDELIJKHEID VOOR DE UPDATES WANNEER DE FOUT DOOR U IS VEROORZAAKT (BV.
+DOOR ONZE UPDATERICHTLIJNEN NIET OP TE VOLGEN) OF ALS U NALATIG BENT GEWEEST. 
+In sommige beperkte gevallen zal de software-update alleen worden aangeboden
+door uw netwerkaanbieder; en een dergelijke software-update zal onderhevig zijn
+aan uw contractuele relatie met uw netwerkaanbieder.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>SOFTWAREOVERDRACHT.</span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Als
+u deze EULA rechten op de hierin verleende LG-software overdraagt aan een derde
+partij in verband met de verkoop of overdracht van het apparaat waar de
+LG-software bij hoorde, dient de overdracht alle LG-software omvatten
+(inclusief alle onderdelen, media, gedrukt materiaal, eventuele upgrades en
+deze EULA). De overdracht mag geen indirecte overdracht zijn, zoals een
+consignatie. Voorafgaand aan de overdracht dient de eindgebruiker die de
+LG-software ontvangt akkoord te gaan met alle voorwaarden van de EULA.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>GARANTIEDISCLAIMER.</span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>U
+ERKENT DAT DE LG-SOFTWARE NIET IS ONTWIKKELD OM AAN UW INDIVIDUELE VEREISTEN TE
+VOLDOEN. LGE GEEFT GEEN GARANTIES OF VERKLARINGEN MET BETREKKING TOT DE
+BESCHIKBAARHEID, HET GEBRUIK, DE TIJDIGHEID, DE VEILIGHEID, DE GELDIGHEID, DE
+NAUWKEURIGHEID OF DE BETROUWBAARHEID VAN, OF DE RESULTATEN VAN HET GEBRUIK VAN,
+OF ANDERSZINS MET BETREKKING TOT DE LG-SOFTWARE OF DE INHOUD ERVAN. ELK
+MATERIAAL DAT VOORAF IS GELADEN, GEDOWNLOAD OF ANDERSZINS IS VERKREGEN VIA HET
+GEBRUIK VAN DE LG-SOFTWARE GEBEURT NAAR EIGEN GOEDDUNKEN EN OP EIGEN RISICO EN
+U BENT ALS ENIGE VERANTWOORDELIJK VOOR EVENTUELE SCHADE AAN UW APPARAAT OF
+VERLIES VAN GEGEVENS ALS GEVOLG VAN HET DOWNLOADEN VAN DERGELIJK MATERIAAL OF
+HET GEBRUIK VAN DE LG-SOFTWARE. TENZIJ AFZONDERLIJK UITEENGEZET IN EEN
+SCHRIFTELIJKE BEPERKTE GARANTIE BIJ UW APPARAAT, WORDT DE DOOR LGE GELEVERDE
+SOFTWARE GELEVERD OP EEN &quot;ZOALS HET IS&quot; EN OP EEN &quot;ALS
+BESCHIKBAAR&quot;-BASIS, ZONDER GARANTIES VAN WELKE AARD DAN OOK, EXPLICIET OF
+IMPLICIET. VOOR ZOVER MOGELIJK OVEREENKOMSTIG DE TOEPASSELIJKE WETGEVING, WIJST
+LGE ALLE GARANTIES AF, EXPLICIET OF IMPLICIET, MET INBEGRIP VAN, MAAR NIET
+BEPERKT TOT, IMPLICIETE GARANTIES VAN OVERDRAAGBAARHEID, GESCHIKTHEID VOOR EEN
+BEPAALD DOEL, GEEN INBREUK OF ANDERE SCHENDING VAN RECHTEN. IN SOMMIGE
+RECHTSGEBIEDEN ZIJN UITSLUITINGEN OF BEPERKINGEN VAN DE DUUR VAN EEN IMPLICIETE
+GARANTIE NIET TOEGESTAAN, ZODAT DE BOVENSTAANDE BEPERKINGEN OF UITSLUITINGEN
+MOGELIJK NIET VAN TOEPASSING ZIJN. GEEN ENKEL ADVIES OF INFORMATIE, MONDELING
+OF SCHRIFTELIJK, DIE U VAN LGE VERKRIJGT, ZAL GEACHT WORDEN DEZE DISCLAIMER VAN
+GARANTIE TE WIJZIGEN OF EEN GARANTIE TE CREËREN.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>TOEGANG EN
+BESCHIKBAARHEID; LEEFTIJDSBEPERKING.</span></b><span lang=NL style='line-height:
+140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Het
+is mogelijk dat LG de via de LG-software beschikbare diensten moet onderbreken
+of stopzetten of uw gebruik van alle of een deel van de LG-software moet
+opschorten of beperken wanneer wij dit redelijkerwijs noodzakelijk achten om
+technische, operationele, veiligheids-, wettelijke of regelgevende redenen. De
+beschikbaarheid van de diensten met betrekking tot een gedeelte van de
+LG-software kan afhankelijk zijn van de prestaties van uw derde
+telecommunicatieprovider, hetgeen buiten de verantwoordelijkheid van LGE ligt.
+U bent verantwoordelijk voor het treffen van alle voorbereidingen die nodig
+zijn om toegang te krijgen tot de LG-software. LGE aanvaardt geen enkele
+verantwoordelijkheid voor verlies of schade die dergelijke externe factoren
+voor u kunnen veroorzaken.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Daarnaast
+kunnen sommige functies van de LG-software vereisen dat uw apparaat toegang
+heeft tot het internet en kunnen er beperkingen worden opgelegd door uw
+netwerk- of internetprovider.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>U
+moet minimaal 14 (veertien) jaar oud zijn om de LG-software te gebruiken of er
+toegang tot te krijgen. Indien u minimaal 14 (veertien) jaar maar jonger dan 18
+(achttien) jaar oud bent, dient u toestemming van uw ouder of wettelijke voogd
+te hebben om de LG-software te gebruiken en deze EULA te accepteren. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>BEPERKING
+VAN AANSPRAKELIJKHEID.</span></b><span lang=NL style='line-height:140%;
+font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>LGE
+IS NIET AANSPRAKELIJK VOOR ENIGERLEI SCHADE DIE VOORTVLOEIT UIT OF VERBAND
+HOUDT MET HET GEBRUIK OF DE ONMOGELIJKHEID TOT GEBRUIK VAN DE LG-SOFTWARE EN DE
+INHOUD OF KOPPELINGEN ERVAN, MET INBEGRIP VAN, MAAR NIET BEPERKT TOT, SCHADE
+VEROORZAAKT DOOR OF IN VERBAND MET FOUTEN, WEGLATINGEN, ONDERBREKINGEN,
+DEFECTEN, VERTRAGING IN DE WERKING OF OVERDRACHT, VIRUSSEN, LIJNSTORINGEN EN
+ALLE ANDERE DIRECTE, INDIRECTE, BIJZONDERE, INCIDENTELE, EXEMPLARISCHE OF
+GEVOLGSCHADE, ZELFS INDIEN LGE OP DE HOOGTE IS GEBRACHT VAN DE MOGELIJKHEID VAN
+DERGELIJKE SCHADE. SOMMIGE RECHTSGEBIEDEN STAAN DE UITSLUITING OF BEPERKING VAN
+INCIDENTELE SCHADE OF GEVOLGSCHADE NIET TOE, ZODAT DE BOVENSTAANDE BEPERKING OF
+UITSLUITING MOGELIJK NIET OP U VAN TOEPASSING IS. NIETTEGENSTAANDE HET
+VOORGAANDE ZAL DE TOTALE AANSPRAKELIJKHEID VAN LGE JEGENS U VOOR ALLE
+VERLIEZEN, SCHADE EN RECHTSVORDERINGEN, MET INBEGRIP VAN MAAR NIET BEPERKT TOT,
+DIE OP BASIS VAN CONTRACT, ONRECHTMATIGE DAAD OF ANDERSZINS, VOORTVLOEIEND UIT
+UW GEBRUIK VAN DIT APPARAAT, DE LG-SOFTWARE EN APPS VAN DERDEN, NIET MEER
+BEDRAGEN DAN HONDERD DOLLAR ($ 100). DE VOORGAANDE BEPERKINGEN, UITSLUITINGEN
+EN DISCLAIMERS, MET INBEGRIP VAN DE LEDEN 6, 9 EN 10, ZIJN VAN TOEPASSING VOOR
+ZOVER MAXIMAAL IS TOEGESTAAN DOOR DE TOEPASSELIJKE WETGEVING, ZELFS ALS EEN
+RECHTSMIDDEL ZIJN WEZENLIJKE DOEL MIST.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>TOEPASSELIJK
+RECHT; GESCHILLENRESOLUTIE (NIET VAN TOEPASSING OP DE V.S.)</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>U
+kunt elke klacht over het gebruik van de LG Software melden op het volgende
+contactadres:</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:23.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-18.0pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>e-mailadres:
+lg-synconmobile@lge.com</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Wij
+zullen alle klachten behandelen volgens de volgende procedure: wij zullen een
+identificatienummer aan uw klacht toekennen en wij zullen u onverwijld, maar
+uiterlijk binnen tweeënzeventig (72) uur na ontvangst van uw klacht, een
+bevestiging van de ontvangst van uw klacht sturen. Wij zullen uw klacht
+onmiddellijk onderzoeken. Als wij het eens zijn met uw klacht, zullen wij deze
+onmiddellijk verhelpen en zullen wij u binnen dertig (30) dagen na ontvangst
+van uw klacht een antwoord sturen over de gegrondheid van uw klacht. Als wij
+het niet eens zijn met uw klacht, of als het niet mogelijk is de klacht
+onmiddellijk te onderzoeken, leggen wij de klacht en ons standpunt vast in een
+verslag dat wij u samen met onze reactie op de gegrondheid van uw klacht zullen
+toesturen. Als wij het niet eens zijn met uw klacht zullen wij u in ons
+antwoord over de gegrondheid van uw klacht ook de redenen daarvoor geven. Als u
+het niet eens bent met de afwijzing van uw klacht kunt u een klacht indienen
+overeenkomstig de onderstaande bepalingen inzake geschillenbeslechting.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Behalve
+voor zover verboden door de lokale wetgeving, zal elk geschil dat voortvloeit
+uit of verband houdt met deze Gebruiksvoorwaarden, met inbegrip van elke vraag
+betreffende het bestaan, de geldigheid of de beëindiging ervan, worden
+voorgelegd aan en definitief beslecht door arbitrage (i) volgens de regels van
+de Koreaanse Raad voor Handelsarbitrage (waarvan de regels geacht worden te
+zijn opgenomen door middel van verwijzing in deze clausule), (ii) het aantal
+arbiters bedraagt één, (iii) de zetel, of wettelijke plaats van arbitrage is
+Seoel, Republiek Korea, (iv) de in de arbitrageprocedure te gebruiken taal is
+Engels en (v) het toepasselijk recht van de overeenkomst is het materieel recht
+van de Republiek Korea.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Voor
+zover vereist door de lokale wetgeving opdat de arbitrage geldig en juridisch
+effectief is als middel voor geschillenbeslechting, ook tegen een consument,
+wordt de verwijzing naar het Reglement van de Koreaanse Raad voor
+Handelsarbitrage in (i) hierboven geacht te verwijzen naar de regels van de
+meest prominente arbitrage-instantie (het “Plaatselijke Arbitragereglement”) in
+uw land, en wordt de verwijzing naar Seoul, Republiek Korea in (iii) hierboven
+geacht te verwijzen naar de hoofdstad van uw land.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>U
+kunt geschillen met ons alleen op individuele basis oplossen, en niet als eiser
+of lid van een groep in een vermeende collectieve of representatieve procedure.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Als
+u een consument bent en u woont in het Verenigd Koninkrijk of de Europese Unie,
+kunt u juridische procedures met betrekking tot deze Gebruiksvoorwaarden
+aanhangig maken bij de rechtbanken van het land waar u woont. Ook als u
+woonachtig bent in het Verenigd Koninkrijk of de Europese Unie en wij deze
+website doorverwijzen naar het land waarin u woonachtig bent, gelden voor u de
+dwingende bepalingen van het recht van het land waarin u woonachtig bent. Niets
+in deze Gebruiksvoorwaarden doet afbreuk aan uw rechten als consument om zich
+te beroepen op dergelijke dwingende bepalingen van het lokale recht.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Als
+u een consument bent en in Noorwegen woont, kunt u zich in geval van een
+geschil wenden tot de Noorse Consumentenraad (of andere relevante
+beroepsinstanties). Meer details vindt u op https://www.forbrukerradet.no/.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Als
+u een consument bent die in de Europese Unie woont en meer informatie wenst
+over online geschillenbeslechting, kunt u deze link volgen naar de website van
+de Europese Commissie: http://ec.europa.eu/consumers/odr/. Deze link wordt
+verstrekt zoals vereist door Verordening (EU) nr. 524/2013 van het Europees
+Parlement en de Raad, uitsluitend ter informatie.  Wij zijn niet verplicht om
+deel te nemen aan online geschillenbeslechting.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>10.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>BEËINDIGING.</span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Deze
+EULA is van kracht totdat het wordt beëindigd. Uw rechten onder deze licentie worden
+automatisch beëindigd zonder kennisgeving van LGE als u zich niet houdt aan de
+voorwaarden van deze EULA. Bovendien kan LGE naar eigen goeddunken diensten in
+verband met de EULA te allen tijde opschorten of beëindigen. Wij behouden ons
+ook het recht voor de EULA op elk moment te wijzigen (inclusief, zonder
+beperking, door het beperken of stopzetten van bepaalde functies in verband met
+deze EULA). Bij beëindiging van deze EULA dient u alle gebruik van de
+LG-software in verband met het apparaat te staken. U kunt deze EULA beëindigen
+door de LG-software geheel of gedeeltelijk te verwijderen. Wij zijn op geen
+enkele wijze aansprakelijk voor een wijziging van de EULA of een opschorting of
+beëindiging van uw toegang tot of gebruik van de diensten in verband met deze
+EULA. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-GB style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>11.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>PREVALERENDE
+TAAL.</span></b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>
+</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Elke
+vertaling van deze EULA is gemaakt voor lokale vereisten en in het geval van
+een discrepantie tussen de Engelse en niet-Engelse versies, zal de Engelse
+versie van deze EULA prevaleren, voor zover niet verboden door de lokale
+wetgeving in uw rechtsgebied.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>12.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>EXPORTCONTROLE.</span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>U
+erkent dat de LG-software onderhevig is aan exportbeperkingen van verschillende
+landen. U gaat ermee akkoord te voldoen aan alle toepasselijke internationale
+en nationale wetten die van toepassing zijn op de LG-software, inclusief alle
+toepasselijke exportbeperkende wetten en regels.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>13.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>VOLLEDIGE
+OVEREENKOMST; DEELBAARHEID; DIVERSEN.</span></b><span lang=NL style='line-height:
+140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Deze
+EULA is de volledige overeenkomst tussen u en LGE met betrekking tot de
+LG-software en vervangt alle eerdere of gelijktijdige mondelinge of schriftelijke
+communicatie, voorstellen en verklaringen met betrekking tot de LG-software of
+enig ander onderwerp dat onder deze EULA valt. Indien een bepaling van deze
+EULA nietig, ongeldig, onuitvoerbaar of onwettig wordt geacht, blijven de
+overige bepalingen volledig van kracht. Het downloaden van updates en toegang
+tot en gebruik van de LG-software is afhankelijk van de dataverbinding van uw
+apparaat. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>14.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>GESCHILLENBESLECHTING
+VOOR INWONERS VAN DE VERENIGDE STATEN.</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=NL
+style='line-height:140%;font-family:"Times New Roman",serif'>Algemeen. In het
+belang van het oplossen van geschillen tussen u en LGE op de meest doelmatige
+en kosteneffectieve manier, komen u en LGE overeen dat alle geschillen die
+ontstaan in verband met deze EULA zullen worden opgelost door middel van
+bindende arbitrage. Arbitrage is informeler dan een rechtszaak. Arbitrage maakt
+gebruik van een neutrale arbiter in plaats van een rechter of jury, kan
+beslissen over beperktere gevallen dan een rechtbank en kan onderhevig zijn aan
+zeer beperkte toetsing door een rechter. Arbiters kunnen net als een rechtbank.
+schadevergoeding toekennen. Onze overeenkomst om geschillen te arbitreren
+omvat, maar is niet beperkt tot, alle vorderingen die voortvloeien uit of
+verband houden met enig aspect van deze EULA, ongeacht of deze zijn gebaseerd
+op overeenkomst, onrechtmatige daden, statuten, fraude, verkeerde voorstelling
+van zaken of enige andere juridische theorie, en ongeacht of de vorderingen
+ontstaan tijdens of na de beëindiging van deze EULA. U BEGRIJPT EN GAAT ERMEE
+AKKOORD DAT, DOOR DEZE EULA AAN TE GAAN, U EN LGE ELK AFSTAND DOEN VAN HET
+RECHT OP JURYRECHTSPRAAK OF DEELNAME AAN EEN GROEPSGEDING.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=NL
+style='line-height:140%;font-family:"Times New Roman",serif'>Uitzonderingen. Niettegenstaande
+Lid 16(a) komen wij beiden overeen dat niets hierin zal worden beschouwd als
+afstand, uitsluiting of anderszins beperking van een van onze rechten om (i)
+een individuele vordering in te stellen bij een kleine rechtbank voor
+vorderingen, (ii) handhavingsacties te ondernemen via toepasselijke federale,
+staats- of lokale instanties waar dergelijke acties kunnen worden behandeld,
+(iii) een voorlopige voorziening te vragen bij een rechtbank, of (iv) een
+rechtszaak aan te spannen bij een rechtbank om inbreuk op intellectuele
+eigendom aan te pakken. </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(c)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Scheidsrechter.
+Elke arbitrage tussen u en LGE zal worden geregeld door de
+&quot;AAA-regels&quot; van de American Arbitration Association
+(&quot;AAA&quot;) en de gewijzigde versies ervan zoals aangegeven in deze EULA,
+en is onderhevig aan de AAA. De AAA-regels en indieningsformulieren zijn online
+beschikbaar op www.adr.org, via het telefoonnummer van AAA: 1-800-778-7879, of
+door contact op te nemen met LGE.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(d)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=NL
+style='line-height:140%;font-family:"Times New Roman",serif'>Kennisgeving;
+Proces. Een partij die arbitrage wil aanvragen moet eerst een schriftelijke
+kennisgeving van het geschil naar de andere partij sturen, per aangetekende
+post of Federal Express (handtekening vereist), of in het geval dat wij geen
+fysiek adres van u in ons bestand hebben, per elektronische post (&quot;Kennisgeving&quot;).
+Het adres van LGE voor kennisgeving is: LG Electronics, USA, Inc. Attn: Legal
+Department-Arbitration, 1000 Sylvan Avenue Englewood Cliffs, NJ 07632. De
+kennisgeving moet (i) de aard en grondslag van de vordering of het geschil
+omschrijven; en (ii) de specifieke gevraagde vergoeding vermelden
+(&quot;Eis&quot;). Wij stemmen ermee in om ons te goeder trouw in te spannen om
+de claim rechtstreeks op te lossen, maar als wij niet binnen 30 dagen na
+ontvangst van de kennisgeving tot overeenstemming zijn gekomen, kunnen u of LGE
+een arbitrageprocedure starten. Tijdens de arbitrage wordt het bedrag van een
+door u of LGE gedaan aanbod tot schikking pas aan de arbiter bekendgemaakt
+nadat deze een definitief besluit en een eventuele uitspraak heeft gedaan.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(e)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Vergoedingen.
+In het geval dat u een arbitragezaak begint in overeenstemming met deze EULA,
+zal LGE u vergoeden voor uw betaling van de indieningskosten, tenzij uw
+vordering meer dan $25.000 bedraagt, in welk geval de betaling van eventuele
+kosten worden bepaald door de AAA-regels. Alle arbitragehoorzittingen zullen
+plaatsvinden op een nader overeen te komen locatie, met dien verstande dat
+indien de vordering $10.000 of minder bedraagt, u kunt kiezen of de arbitrage
+zal worden uitgevoerd (i) uitsluitend op basis van aan de arbiter voorgelegde
+documenten; (ii) door middel van een telefonische hoorzitting zonder voor de
+rechtbank te hoeven verschijnen; of (iii) door middel van een hoorzitting
+waarbij u persoonlijk moet voorkomen zoals vastgesteld door de AAA-regels in de
+gemeente (of plaats) van uw factuuradres. Indien de arbiter oordeelt dat de
+inhoud van uw vordering of het in de vordering gevraagde redres lichtzinnig is
+of voor een ongepast doel is ingesteld (zoals bepaald op basis van de normen
+van Federal Rule of Civil Procedure (het Amerikaanse Wetboek voor Burgerlijke
+Rechtsvordering) 11(b)), zal de betaling van alle kosten onderhevig zijn aan de
+AAA-regels. In dat geval stemt u ermee in om LGE alle eerder door haar
+uitgekeerde bedragen terug te betalen die anderzijds uw betalingsverplichting
+zijn volgens de AAA-regels. Ongeacht de wijze waarop de arbitrage wordt
+gevoerd, geeft de arbiter een met redenen omklede schriftelijke beslissing die
+volstaat om de voornaamste bevindingen en conclusies toe te lichten waarop de
+beslissing en de eventuele uitspraak zijn gebaseerd. De arbiter kan uitspraken
+doen en geschillen beslechten over de betaling en terugbetaling van honoraria
+of kosten op elk moment van de procedure en op verzoek van een van beide
+partijen, mits deze binnen 14 dagen na de uitspraak van de arbiter over de
+grond van de zaak wordt ingediend.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(f)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Geen
+groepsgedingen. U EN LGE KOMEN OVEREEN DAT IEDER ALLEEN VORDERINGEN TEGEN DE
+ANDER KAN INSTELLEN IN UW OF ZIJN INDIVIDUELE HOEDANIGHEID EN NIET ALS EISER OF
+LID VAN EEN GROEP IN EEN VERMEENDE COLLECTIEVE OF REPRESENTATIEVE PROCEDURE.
+Tenzij u en LGE anders overeenkomen, mag de arbiter de vorderingen van meer dan
+één persoon niet consolideren en mag hij niet anderszins beslissen over enige
+vorm van representatieve of collectieve procedure.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(g)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=NL
+style='line-height:140%;font-family:"Times New Roman",serif'>Procedure voor
+geschillenbeslechting weigeren. U kunt deze procedure voor
+geschillenbeslechting weigeren. Als u deze weigert, kunnen noch u noch LG van
+de ander eisen deel te nemen aan een arbitrageprocedure. Om de procedure voor
+geschillenbeslechting te weigeren, dient u LG uiterlijk 30 kalenderdagen na de
+datum van aankoop van het product door de eerste koper op de hoogte stellen
+door ofwel: (i) een e-mail te sturen naar [optout@lge.com], met als onderwerp:
+&quot;Arbitration Opt Out&quot; of (ii) door te bellen naar [1-800-980-2973]. U
+dient in de betreffende e-mail of telefoongesprek het volgende op te geven: (a)
+uw naam en adres; (b) de datum waarop de dienst is ingegaan; en (c) de datum
+waarop de dienst is beëindigd; (d) de naam of het modelnummer van het product;
+en (e) het IMEI- of MEID- of serienummer, zoals van toepassing (het IMEI- of
+MEID- of serienummer kan worden gevonden door de accu uit uw apparaat te
+verwijderen, zoals uitgelegd in de gebruikershandleiding). E-mail en telefoon
+zijn de enige twee vormen van kennisgeving die effectief zijn om de
+geschillenbeslechtingsprocedure te weigeren. Als u deze niet weigert,
+accepteert u alle voorwaarden van de Beperkte garantie, inclusief de hierboven
+beschreven bindende arbitragebepaling.  </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>(h)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span lang=NL
+style='line-height:140%;font-family:"Times New Roman",serif'>Wijzigingen. In
+het geval dat LGE een toekomstige wijziging aanbrengt in deze arbitragebepaling
+(anders dan een wijziging van het adres van LGE voor kennisgeving), kunt u een
+dergelijke wijziging afwijzen door ons binnen 30 dagen na de wijziging een
+schriftelijke kennisgeving te sturen naar het adres van LGE voor kennisgeving,
+in welk geval uw account bij LGE onmiddellijk wordt beëindigd en deze
+arbitragebepaling, zoals van kracht onmiddellijk voorafgaand aan de wijzigingen
+die u afwijst, blijft bestaan.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>15.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>Beperkte
+rechten voor eindgebruikers van de Amerikaanse overheid.</span></b><span
+lang=NL style='line-height:140%;font-family:"Times New Roman",serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>LG-software
+wordt hieronder alleen in licentie gegeven met &quot;beperkte rechten&quot; en
+als &quot;commerciële items&quot; bestaande uit &quot;commerciële
+software&quot; en &quot;commerciële softwaredocumentatie&quot; met alleen die
+rechten die aan alle andere eindgebruikers worden verleend krachtens de
+voorwaarden van deze EULA. Alle producten worden alleen geleverd met
+&quot;beperkte rechten&quot; met alleen die rechten die aan alle andere
+eindgebruikers worden verleend overeenkomstig de hierin opgenomen voorwaarden.
+Alle software en producten hieronder worden geleverd met inachtneming van
+Federal Acquisition Regulation (FAR) 52.227.19.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=NL style='line-height:140%;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=NL style='font-family:"Times New Roman",serif'>16.
+Contact opnemen met LGE over deze licentieovereenkomst voor
+eindgebruikerssoftware</span></b></p>
+
+<p class=MsoNormal><span lang=NL style='font-family:"Times New Roman",serif'>Als
+u vragen of opmerkingen hebt over deze EULA, raadpleeg dan de contactinformatie
+voor ondersteuning in uw regio via ons officiële e-mailadres
+[lg-synconmobile@lge.com]. </span></p>
+
+<p class=MsoNormal><span lang=NL style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

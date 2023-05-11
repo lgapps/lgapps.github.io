@@ -41,7 +41,14 @@ select {
   height: 30px;
   box-sizing: border-box;
   border-radius: 5px;
+  background-color: white;
+  color: white;
 }
+
+select option {
+    color: white;
+    background-color: white;
+  }
 
 #contents {
   margin: 10px;

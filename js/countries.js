@@ -149,10 +149,10 @@ function createList(langInfo, testUL, pageName) {
 }
 
 function testURL(pageName, countryCode, locale) {
-  var inputUrl = `https://lgapps.github.io/test_project/${pageName}?type=${params["type"]}&country=${countryCode}&locale=${locale}`;
+  var inputUrl = `https://lgapps.github.io/${pageName}?type=${params["type"]}&country=${countryCode}&locale=${locale}`;
   if (pageName === "detail") {
     var typeToLower = params["type"].toLowerCase();
-    inputUrl = `https://lgapps.github.io/test_project/customer_${typeToLower}/${pageName}?type=${params["type"]}&country=${countryCode}&locale=${locale}`;
+    inputUrl = `https://lgapps.github.io/customer_${typeToLower}/${pageName}?type=${params["type"]}&country=${countryCode}&locale=${locale}`;
   }
   console.log(inputUrl);
 }

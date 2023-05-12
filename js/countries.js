@@ -14,7 +14,7 @@ function getURL() {
 
 $(document).ready(function () {
   var countries = {};
-  if (params["country"] === "KR") {
+  if (params["locale"] === "ko-KR") {
     countries = {
       NL: [{ country: "네덜란드", language: "Nederlands", locale: "nl-NL" }],
       TW: [{ country: "대만", language: "台灣中文", locale: "zh-TW" }],

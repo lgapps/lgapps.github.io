@@ -24,9 +24,12 @@ function getUrl2() {
     var language = countryLanguage.language;
 
     var displayText = country + "/" + language;
-    document.getElementById("countryLanguage").textContent = displayText;
+    var buttonBack = document.getElementById("buttonBack");
+    buttonBack.value = displayText;
+    console.log(countryName + "/" + language);
   } else {
     document.getElementById("countryLanguage").textContent = "Back";
+    console.log("No information. show Back.");
   }
 
   var url =

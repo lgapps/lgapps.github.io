@@ -13,65 +13,6 @@ function getURL() {
   return url;
 }
 
-function getURL2() {
-  console.log("log. detail. call getURL2()");
-  var url =
-    "./countries?type=" +
-    params["type"] +
-    "&country=" +
-    params["country"] +
-    "&locale=" +
-    params["locale"];
-  return url;
-}
-
-function setButtonBackValue() {
-  var locale = params["locale"];
-  var countries = params["country"];
-
-  var countryLanguage = findCountryNLang(locale, countries);
-  if (countryLanguage) {
-    var country = countryLanguage.country;
-    var language = countryLanguage.language;
-
-    var displayText = country + "/" + language;
-    var buttonBack = document.getElementById("buttonBack");
-    buttonBack.value = displayText;
-    console.log(country + "/" + language);
-  } else {
-    document.getElementById("countryLanguage").textContent = "Back";
-    console.log("No information. show Back.");
-  }
-}
-
-function setButtonBackValue2() {
-  var countryNLang = findCountryNLang(params["locale"], params["country"]);
-  if (countryNLang) {
-    $("#buttonBack").text(countryNLang.country + "/" + countryNLang.language);
-    console.log(countryNLang.country + "/" + countryNLang.language);
-  } else {
-    $("#buttonBack").text("Back");
-    console.log("No information. show Back.");
-  }
-}
-
-function findCountryNLang(locale, country) {
-  var countries = countryList[country];
-  if (countries) {
-    for (var i = 0; i < countries.length; i++) {
-      var currentCountry = countries[i];
-
-      if (currentCountry.locale === locale) {
-        return {
-          country: currentCountry.country,
-          language: currentCountry.language,
-        };
-      }
-    }
-  }
-  return null;
-}
-
 $(document).ready(function () {
   const owner = "lgapps";
   const repo = "lgapps.github.io";
@@ -90,7 +31,7 @@ $(document).ready(function () {
     },
     success: function (data) {
       console.log("log. success. setButtonBackValue.");
-      setButtonBackValue2();
+      setButtonBackValue();
 
       console.log("log. success. data.length=" + data.length);
       const options = [];
@@ -141,7 +82,7 @@ $(document).ready(function () {
     },
     error: function (xhr, status, error) {
       console.log("log. no file. setButtonBackValue.");
-      setButtonBackValue2();
+      setButtonBackValue();
 
       console.log("log. no file. load default page.");
       var url_default = "./default_en-US.html";
@@ -150,6 +91,34 @@ $(document).ready(function () {
     },
   });
 });
+
+function setButtonBackValue() {
+  var countryNLang = findCountryNLang(params["locale"], params["country"]);
+  if (countryNLang) {
+    $("#buttonBack").text(countryNLang.country + "/" + countryNLang.language);
+    console.log(countryNLang.country + "/" + countryNLang.language);
+  } else {
+    $("#buttonBack").text("Back");
+    console.log("No information. show Back.");
+  }
+}
+
+function findCountryNLang(locale, country) {
+  var countries = countryList[country];
+  if (countries) {
+    for (var i = 0; i < countries.length; i++) {
+      var currentCountry = countries[i];
+
+      if (currentCountry.locale === locale) {
+        return {
+          country: currentCountry.country,
+          language: currentCountry.language,
+        };
+      }
+    }
+  }
+  return null;
+}
 
 function selectFile(select) {
   const contents = document.getElementById("contents");

@@ -26,6 +26,10 @@ function getCountryList() {
     IN: [{ country: "India", language: "English", locale: "en-IN" }],
     IT: [{ country: "Italy", language: "Italiano", locale: "it-IT" }],
     JP: [{ country: "Japan", language: "日本語", locale: "ja-JP" }],
+    KR: [
+      { country: "Korea", language: "한국어", locale: "ko-KR" },
+      { country: "Korea", language: "English", locale: "en-US" },
+    ],
     NL: [{ country: "Netherlands", language: "Nederlands", locale: "nl-NL" }],
     PL: [{ country: "Poland", language: "Polski", locale: "pl-PL" }],
     PT: [
@@ -36,21 +40,12 @@ function getCountryList() {
       },
     ],
     SG: [{ country: "Singapore", language: "English", locale: "en-SG" }],
-    KR: [
-      { country: "South Korea", language: "한국어", locale: "ko-KR" },
-      { country: "South Korea", language: "English", locale: "en-US" },
-    ],
     ES: [{ country: "Spain", language: "Español", locale: "es-ES" }],
     TW: [{ country: "Taiwan", language: "台灣中文", locale: "zh-TW" }],
     TH: [{ country: "Thailand", language: "ไทย", locale: "th-TH" }],
+    US: [{ country: "U.S.A", language: "English", locale: "en-US" }],
     GB: [{ country: "United Kingdom", language: "English", locale: "en-GB" }],
-    US: [
-      {
-        country: "United States of America",
-        language: "English",
-        locale: "en-US",
-      },
-    ],
+
     VN: [{ country: "Vietnam", language: "Tiếng Việt", locale: "vi-VN" }],
   };
   return countries;

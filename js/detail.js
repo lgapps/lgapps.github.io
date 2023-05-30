@@ -81,12 +81,12 @@ $(document).ready(function () {
       console.log("log. success. setButtonBackValue.");
       var countryNLang = findCountryNLang(params["locale"], params["country"]);
       if (countryNLang) {
-        $("#buttonBack").val(
+        $("#buttonBack").text(
           countryNLang.country + "/" + countryNLang.language
         );
         console.log(countryNLang.country + "/" + countryNLang.language);
       } else {
-        $("#buttonBack").val("Back");
+        $("#buttonBack").text("Back");
         console.log("No information. show Back.");
       }
 

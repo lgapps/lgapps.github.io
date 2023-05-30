@@ -44,6 +44,17 @@ function setButtonBackValue() {
   }
 }
 
+function setButtonBackValue2() {
+  var countryNLang = findCountryNLang(params["locale"], params["country"]);
+  if (countryNLang) {
+    $("#buttonBack").text(countryNLang.country + "/" + countryNLang.language);
+    console.log(countryNLang.country + "/" + countryNLang.language);
+  } else {
+    $("#buttonBack").text("Back");
+    console.log("No information. show Back.");
+  }
+}
+
 function findCountryNLang(locale, country) {
   var countries = countryList[country];
   if (countries) {
@@ -79,16 +90,7 @@ $(document).ready(function () {
     },
     success: function (data) {
       console.log("log. success. setButtonBackValue.");
-      var countryNLang = findCountryNLang(params["locale"], params["country"]);
-      if (countryNLang) {
-        $("#buttonBack").text(
-          countryNLang.country + "/" + countryNLang.language
-        );
-        console.log(countryNLang.country + "/" + countryNLang.language);
-      } else {
-        $("#buttonBack").text("Back");
-        console.log("No information. show Back.");
-      }
+      setButtonBackValue2();
 
       console.log("log. success. data.length=" + data.length);
       const options = [];
@@ -138,6 +140,9 @@ $(document).ready(function () {
       $("#contents").load(recentUrl);
     },
     error: function (xhr, status, error) {
+      console.log("log. no file. setButtonBackValue.");
+      setButtonBackValue2();
+
       console.log("log. no file. load default page.");
       var url_default = "./default_en-US.html";
       $("#contents_default").load(url_default);

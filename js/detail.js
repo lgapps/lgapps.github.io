@@ -44,11 +44,11 @@ function getURL2() {
 
 function findCountryLanguage(locale, country) {
   var countries = countryList;
-  var countryList = countries[country];
+  var countriesList = countries[country];
 
-  if (countryList) {
-    for (var i = 0; i < countryList.length; i++) {
-      var currentCountry = countryList[i];
+  if (countriesList) {
+    for (var i = 0; i < countriesList.length; i++) {
+      var currentCountry = countriesList[i];
 
       if (currentCountry.locale === locale) {
         return {

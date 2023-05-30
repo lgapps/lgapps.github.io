@@ -1,4 +1,5 @@
 var params = window.getParams();
+var countryList = window.getCountryList();
 
 function getURL() {
   console.log("log. detail. call getURL()");
@@ -10,6 +11,52 @@ function getURL() {
     "&locale=" +
     params["locale"];
   return url;
+}
+
+function getUrl2() {
+  console.log("log. detail. call getURL2()");
+  var locale = params["locale"];
+  var countries = params["country"];
+
+  var countryLanguage = findCountryLanguage(locale, countries);
+  if (countryLanguage) {
+    var country = countryLanguage.country;
+    var language = countryLanguage.language;
+
+    var displayText = country + "/" + language;
+    document.getElementById("countryLanguage").textContent = displayText;
+  } else {
+    document.getElementById("countryLanguage").textContent = "Back";
+  }
+
+  var url =
+    "./countries?type=" +
+    params["type"] +
+    "&country=" +
+    params["country"] +
+    "&locale=" +
+    params["locale"];
+  return url;
+}
+
+function findCountryLanguage(locale, country) {
+  var countries = countryList;
+  var countryList = countries[country];
+
+  if (countryList) {
+    for (var i = 0; i < countryList.length; i++) {
+      var currentCountry = countryList[i];
+
+      if (currentCountry.locale === locale) {
+        return {
+          country: currentCountry.country,
+          language: currentCountry.language,
+        };
+      }
+    }
+  }
+
+  return null;
 }
 
 $(document).ready(function () {

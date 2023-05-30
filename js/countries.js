@@ -1,4 +1,5 @@
 var params = window.getParams();
+var countryList = window.getCountryList();
 
 function getURL() {
   console.log("log. countries. call getURL()");
@@ -13,7 +14,7 @@ function getURL() {
 }
 
 $(document).ready(function () {
-  var countries = {};
+  var countries = countryList;
   if (params["locale"] === "ko-KR") {
     countries = {
       NL: [{ country: "네덜란드", language: "Nederlands", locale: "nl-NL" }],
@@ -54,49 +55,6 @@ $(document).ready(function () {
       PL: [{ country: "폴란드", language: "Polski", locale: "pl-PL" }],
       FR: [{ country: "프랑스", language: "Français", locale: "fr-FR" }],
       AU: [{ country: "호주", language: "English", locale: "en-AU" }],
-    };
-  } else {
-    countries = {
-      AU: [{ country: "Australia", language: "English", locale: "en-AU" }],
-      BR: [
-        { country: "Brazil", language: "Português(Brasil)", locale: "pt-BR" },
-      ],
-      CA: [
-        { country: "Canada", language: "English", locale: "en-US" },
-        { country: "Canada", language: "Francais", locale: "fr-CA" },
-      ],
-      CN: [{ country: "China", language: "简体中文", locale: "zh-CN" }],
-      FR: [{ country: "France", language: "Français", locale: "fr-FR" }],
-      DE: [{ country: "Germany", language: "Deutsch", locale: "de-DE" }],
-      IN: [{ country: "India", language: "English", locale: "en-IN" }],
-      IT: [{ country: "Italy", language: "Italiano", locale: "it-IT" }],
-      JP: [{ country: "Japan", language: "日本語", locale: "ja-JP" }],
-      NL: [{ country: "Netherlands", language: "Nederlands", locale: "nl-NL" }],
-      PL: [{ country: "Poland", language: "Polski", locale: "pl-PL" }],
-      PT: [
-        {
-          country: "Portugal",
-          language: "Português(Portugal)",
-          locale: "pt-PT",
-        },
-      ],
-      SG: [{ country: "Singapore", language: "English", locale: "en-SG" }],
-      KR: [
-        { country: "South Korea", language: "한국어", locale: "ko-KR" },
-        { country: "South Korea", language: "English", locale: "en-US" },
-      ],
-      ES: [{ country: "Spain", language: "Español", locale: "es-ES" }],
-      TW: [{ country: "Taiwan", language: "台灣中文", locale: "zh-TW" }],
-      TH: [{ country: "Thailand", language: "ไทย", locale: "th-TH" }],
-      GB: [{ country: "United Kingdom", language: "English", locale: "en-GB" }],
-      US: [
-        {
-          country: "United States of America",
-          language: "English",
-          locale: "en-US",
-        },
-      ],
-      VN: [{ country: "Vietnam", language: "Tiếng Việt", locale: "vi-VN" }],
     };
   }
 

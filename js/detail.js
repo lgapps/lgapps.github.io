@@ -15,10 +15,21 @@ function getURL() {
 
 function getURL2() {
   console.log("log. detail. call getURL2()");
+  var url =
+    "./countries?type=" +
+    params["type"] +
+    "&country=" +
+    params["country"] +
+    "&locale=" +
+    params["locale"];
+  return url;
+}
+
+function setButtonBackValue() {
   var locale = params["locale"];
   var countries = params["country"];
 
-  var countryLanguage = findCountryLanguage(locale, countries);
+  var countryLanguage = findCountryNLang(locale, countries);
   if (countryLanguage) {
     var country = countryLanguage.country;
     var language = countryLanguage.language;
@@ -31,20 +42,10 @@ function getURL2() {
     document.getElementById("countryLanguage").textContent = "Back";
     console.log("No information. show Back.");
   }
-
-  var url =
-    "./countries?type=" +
-    params["type"] +
-    "&country=" +
-    params["country"] +
-    "&locale=" +
-    params["locale"];
-  return url;
 }
 
-function findCountryLanguage(locale, country) {
+function findCountryNLang(locale, country) {
   var countries = countryList[country];
-
   if (countries) {
     for (var i = 0; i < countries.length; i++) {
       var currentCountry = countries[i];
@@ -57,7 +58,6 @@ function findCountryLanguage(locale, country) {
       }
     }
   }
-
   return null;
 }
 
@@ -78,6 +78,18 @@ $(document).ready(function () {
       Accept: "application/vnd.github.v3+json",
     },
     success: function (data) {
+      console.log("log. success. setButtonBackValue.");
+      var countryNLang = findCountryNLang(params["locale"], params["country"]);
+      if (countryNLang) {
+        $("#buttonBack").val(
+          countryNLang.country + "/" + countryNLang.language
+        );
+        console.log(countryNLang.country + "/" + countryNLang.language);
+      } else {
+        $("#buttonBack").val("Back");
+        console.log("No information. show Back.");
+      }
+
       console.log("log. success. data.length=" + data.length);
       const options = [];
       const pathValue = "./" + params["country"] + "/" + params["locale"] + "/";

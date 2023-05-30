@@ -26,7 +26,7 @@ function getURL2() {
     var displayText = country + "/" + language;
     var buttonBack = document.getElementById("buttonBack");
     buttonBack.value = displayText;
-    console.log(countryName + "/" + language);
+    console.log(country + "/" + language);
   } else {
     document.getElementById("countryLanguage").textContent = "Back";
     console.log("No information. show Back.");

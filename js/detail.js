@@ -13,7 +13,7 @@ function getURL() {
   return url;
 }
 
-function getUrl2() {
+function getURL2() {
   console.log("log. detail. call getURL2()");
   var locale = params["locale"];
   var countries = params["country"];

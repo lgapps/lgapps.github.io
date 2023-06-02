@@ -30,14 +30,10 @@ $(document).ready(function () {
         { country: "브라질", language: "Português(Brasil)", locale: "pt-BR" },
       ],
       ES: [{ country: "스페인", language: "Español", locale: "es-ES" }],
-
       SG: [{ country: "싱가폴", language: "English", locale: "en-SG" }],
-
       GB: [{ country: "영국", language: "English", locale: "en-GB" }],
       IT: [{ country: "이탈리아", language: "Italiano", locale: "it-IT" }],
-
       IN: [{ country: "인도", language: "English", locale: "en-IN" }],
-
       JP: [{ country: "일본", language: "日本語", locale: "ja-JP" }],
       CN: [{ country: "중국", language: "简体中文", locale: "zh-CN" }],
       CA: [

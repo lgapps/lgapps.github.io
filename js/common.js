@@ -45,7 +45,6 @@ function getCountryList() {
     TH: [{ country: "Thailand", language: "ไทย", locale: "th-TH" }],
     US: [{ country: "U.S.A", language: "English", locale: "en-US" }],
     GB: [{ country: "United Kingdom", language: "English", locale: "en-GB" }],
-
     VN: [{ country: "Vietnam", language: "Tiếng Việt", locale: "vi-VN" }],
   };
   return countries;

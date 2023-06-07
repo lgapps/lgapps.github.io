@@ -13,7 +13,7 @@ function getParams() {
 }
 
 function getURL(pageName) {
-  console.log("log. call getURL(", pageName, ")");
+  console.log("log. call getURL(" + pageName + ")");
   var url =
     "./" +
     pageName +

@@ -12,6 +12,20 @@ function getParams() {
   return params;
 }
 
+function getURL(pageName) {
+  console.log("log. call getURL(", pageName, ")");
+  var url =
+    "./" +
+    pageName +
+    "?type=" +
+    params["type"] +
+    "&country=" +
+    params["country"] +
+    "&locale=" +
+    params["locale"];
+  return url;
+}
+
 function getCountryList() {
   countries = {
     AU: [{ country: "Australia", language: "English", locale: "en-AU" }],

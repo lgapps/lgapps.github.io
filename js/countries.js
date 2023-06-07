@@ -1,18 +1,6 @@
 var params = window.getParams();
 var countryList = window.getCountryList();
 
-function getURL() {
-  console.log("log. countries. call getURL()");
-  var url =
-    "./detail?type=" +
-    params["type"] +
-    "&country=" +
-    params["country"] +
-    "&locale=" +
-    params["locale"];
-  return url;
-}
-
 $(document).ready(function () {
   var countries = countryList;
   if (params["locale"] === "ko-KR") {
@@ -68,47 +56,9 @@ $(document).ready(function () {
     }
     document.body.appendChild(list);
   }
-
-  console.log("log. test. inputIndexUrl list");
-  const testUL = document.createElement("ul");
-  for (let countryCode in countries) {
-    for (let langInfo of countries[countryCode]) {
-      //createList(langInfo, testUL, "index");
-      testURL("index", countryCode, langInfo.locale);
-    }
-  }
-
-  console.log("log. test. inputDetailUrl list");
-  for (let countryCode in countries) {
-    for (let langInfo of countries[countryCode]) {
-      //createList(langInfo, testUL, "detail");
-      testURL("detail", countryCode, langInfo.locale);
-    }
-  }
-  document.body.appendChild(testUL);
 });
 
 function selectCountry(countryCode, locale) {
   const url = `./detail?type=${params["type"]}&country=${countryCode}&locale=${locale}`;
   location.href = url;
-}
-
-function createList(langInfo, testUL, pageName) {
-  const listItem = document.createElement("li");
-  const link = document.createElement("a");
-  link.innerText = langInfo.country + "/" + langInfo.language;
-  link.onclick = function () {
-    testURL(pageName, countryCode, langInfo.locale);
-  };
-  listItem.appendChild(link);
-  testUL.appendChild(listItem);
-}
-
-function testURL(pageName, countryCode, locale) {
-  var inputUrl = `https://lgapps.github.io/${pageName}?type=${params["type"]}&country=${countryCode}&locale=${locale}`;
-  if (pageName === "detail") {
-    var typeToLower = params["type"].toLowerCase();
-    inputUrl = `https://lgapps.github.io/customer_${typeToLower}/${pageName}?type=${params["type"]}&country=${countryCode}&locale=${locale}`;
-  }
-  console.log(inputUrl);
 }

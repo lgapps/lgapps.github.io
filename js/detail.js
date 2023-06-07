@@ -1,18 +1,6 @@
 var params = window.getParams();
 var countryList = window.getCountryList();
 
-function getURL() {
-  console.log("log. detail. call getURL()");
-  var url =
-    "./countries?type=" +
-    params["type"] +
-    "&country=" +
-    params["country"] +
-    "&locale=" +
-    params["locale"];
-  return url;
-}
-
 $(document).ready(function () {
   const owner = "lgapps";
   const repo = "lgapps.github.io";

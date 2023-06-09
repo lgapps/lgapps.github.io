@@ -2,6 +2,9 @@ var params = window.getParams();
 var countryList = window.getCountryList();
 
 $(document).ready(function () {
+  console.log("log. setButtonBackValue.");
+  setButtonBackValue();
+
   const owner = "lgapps";
   const repo = "lgapps.github.io";
   var typeToLower = params["type"].toLowerCase();
@@ -15,12 +18,10 @@ $(document).ready(function () {
   $.ajax({
     url: `https://api.github.com/repos/${owner}/${repo}/contents/${path}`,
     headers: {
-      Accept: "application/vnd.github.v3+json",
+      Accept: "application/vnd.github+json",
     },
-    success: function (data) {
-      console.log("log. success. setButtonBackValue.");
-      setButtonBackValue();
-
+  })
+    .done(function (data) {
       console.log("log. success. data.length=" + data.length);
       const options = [];
       const pathValue = "./" + params["country"] + "/" + params["locale"] + "/";
@@ -67,17 +68,13 @@ $(document).ready(function () {
         "/" +
         findRecentFile;
       $("#contents").load(recentUrl);
-    },
-    error: function (xhr, status, error) {
-      console.log("log. no file. setButtonBackValue.");
-      setButtonBackValue();
-
+    })
+    .fail(function (xhr, status, error) {
       console.log("log. no file. load default page.");
       var url_default = "./default_en-US.html";
       $("#contents_default").load(url_default);
       $("#select_files").hide();
-    },
-  });
+    });
 });
 
 function setButtonBackValue() {

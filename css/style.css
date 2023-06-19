@@ -53,10 +53,12 @@ select option {
 
 #contents {
   margin: 10px;
+  overflow-wrap: break-word;
 }
 
 #contents_default {
   margin: 10px;
+  overflow-wrap: break-word;
 }
 
 ul.countrylist,

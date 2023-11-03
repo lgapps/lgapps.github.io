@@ -83,7 +83,7 @@ ol.countrylist li {
       border-bottom: 0px;
   } */
 
-/* a {
-      text-decoration: underline;
-      color: blue;
-  } */
+a {
+      text-decoration: none;
+      color: black;
+}

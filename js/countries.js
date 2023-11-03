@@ -47,7 +47,6 @@ $(document).ready(function () {
     for (let langInfo of countries[countryCode]) {
       const listItem = document.createElement("li");
       const link = document.createElement("a");
-      link.href = "#";
       link.innerText = langInfo.country + "/" + langInfo.language;
       link.onclick = function () {
         selectCountry(countryCode, langInfo.locale);

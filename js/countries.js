@@ -52,8 +52,8 @@ $(document).ready(function () {
       link.onclick = function () {
         selectCountry(countryCode, langInfo.locale);
       };
-      link.setAttribute("role", "link");
-      link.setAttribute("aria-label", link.innerText);
+      // link.setAttribute("role", "link");
+      // link.setAttribute("aria-label", link.innerText);
       listItem.appendChild(link);
       list.appendChild(listItem);
     }

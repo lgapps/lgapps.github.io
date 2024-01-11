@@ -1,0 +1,950 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:"\@맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"메모 텍스트 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"머리글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"바닥글 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"메모 주제 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"풍선 도움말 텍스트 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:9.0pt;
+	font-family:"맑은 고딕";}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:40.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:115%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+span.Char
+	{mso-style-name:"메모 텍스트 Char";
+	mso-style-link:"메모 텍스트";}
+span.Char0
+	{mso-style-name:"머리글 Char";
+	mso-style-link:머리글;}
+span.Char1
+	{mso-style-name:"바닥글 Char";
+	mso-style-link:바닥글;}
+span.Char2
+	{mso-style-name:"메모 주제 Char";
+	mso-style-link:"메모 주제";
+	font-weight:bold;}
+span.Char3
+	{mso-style-name:"풍선 도움말 텍스트 Char";
+	mso-style-link:"풍선 도움말 텍스트";
+	font-family:"맑은 고딕";}
+.MsoChpDefault
+	{font-family:"맑은 고딕";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=KO link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>Contrat de licence de logiciel pour utilisateur final</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Ledit
+contrat de licence de logiciel pour utilisateur final («&nbsp;CLUF&nbsp;») est
+une entente juridique entre vous (une personne ou une entité unique) et LG
+Electronics inc. («&nbsp;LGE&nbsp;»), une société enregistrée en Corée du Sud ayant
+son siège social à LG Twin Towers, 128&nbsp;Yeoui-daero, Yeoungdeungpo-gu, Séoul&nbsp;07336,
+Corée du Sud, pour LG gram Link, qui est préchargé ou installé sur votre
+appareil, qui comprend un logiciel ou une application mobile et qui peut
+inclure des supports connexes, ou de la documentation imprimée, en ligne ou
+électronique relative à votre utilisation de cet appareil («&nbsp;logiciel&nbsp;LG&nbsp;»).
+</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Cet
+appareil nécessite l’utilisation du logiciel&nbsp;LG pour son fonctionnement
+normal. EN UTILISANT LE LOGICIEL&nbsp;LG, VOUS ACCEPTEZ LES CONDITIONS DU
+PRÉSENT CLUF. SI VOUS N’ACCEPTEZ PAS CES CONDITIONS, VEUILLEZ NE PAS UTILISER
+LE LOGICIEL LG. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>RÉSERVE DE
+DROITS ET DE PROPRIÉTÉ</span></b><span lang=FR-CA style='line-height:140%;
+font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>LGE
+se réserve tous les droits qui ne vous sont pas expressément accordés dans le
+présent CLUF. Le logiciel&nbsp;LG est protégé par des droits d’auteur et d’autres
+lois et traités relatifs à la propriété intellectuelle. LGE ou ses sociétés
+affiliées et ses concédants de licence détiennent le titre, les droits d’auteur
+et autres droits de propriété intellectuelle du logiciel&nbsp;LG. Le logiciel&nbsp;LG
+fait l’objet d’une licence et n’est pas vendu.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>OCTROI DE LA
+LICENCE</span></b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>
+</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>LGE
+vous accorde les droits suivants, sous réserve que vous respectiez l’ensemble
+des conditions générales du présent CLUF&nbsp;: vous pouvez utiliser une copie
+du logiciel&nbsp;LG préchargé, installé ou téléchargé sur cet appareil, y
+accéder et l’exécuter, uniquement dans la mesure nécessaire à l’utilisation de
+votre appareil.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Certaines
+composantes du logiciel LG sont fournies sous condition d’une licence libre.
+Dans ce cas, les dispositions de la licence libre peuvent prévaloir sur
+certaines des conditions du présent CLUF. Vous pouvez afficher les renseignements
+détaillés concernant la licence libre en bas de l’écran principal de votre
+appareil mobile ou dans le coin supérieur droit de la barre de titre dans le
+menu « Renseignements sur la version » de votre appareil.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>LIMITATIONS
+DES DROITS DE L’UTILISATEUR FINAL</span></b><span lang=FR-CA style='line-height:
+140%;font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Vous
+ne pouvez pas copier, faire de l’ingénierie inverse, décompiler, désassembler,
+ou tenter de toute autre manière de découvrir le code source ou les algorithmes
+du logiciel&nbsp;LG (sauf et seulement dans la mesure où une telle activité est
+expressément autorisée par la loi en vigueur, nonobstant cette limitation), ni
+modifier ou désactiver toute fonction du logiciel&nbsp;LG, ni créer des œuvres
+dérivées basées sur le logiciel&nbsp;LG. Vous ne pouvez pas louer, donner en
+crédit-bail, prêter, accorder une sous-licence ou fournir des services d’hébergement
+commerciaux avec le logiciel&nbsp;LG. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>MISES À JOUR</span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Ledit
+CLUF s’applique aux mises à jour, suppléments et composants complémentaires (le
+cas échéant) du logiciel&nbsp;LG que LGE peut vous fournir ou mettre à votre
+disposition après la date à laquelle vous obtenez votre appareil LG ou l’avez installé
+sur votre appareil mobile, sauf si nous fournissons d’autres conditions avec
+une telle mise à jour. Pour utiliser le logiciel&nbsp;LG identifié comme mise à
+jour, vous devez d’abord obtenir une licence pour le logiciel&nbsp;LG identifié
+par LGE comme admissible à la mise à jour. Après la mise à jour, vous ne pouvez
+plus utiliser le logiciel&nbsp;LG qui était à la base de votre admissibilité à
+la mise à jour. La mise à jour du logiciel&nbsp;LG peut ajouter de nouvelles
+fonctions et, dans certains cas, supprimer des fonctions existantes.</span></p>
+
+<p class=MsoCommentText style='margin-left:7.1pt;line-height:140%;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>VEUILLEZ
+NOTER QUE LG ELECTRONICS INC. N’ACCEPTE PAS DE RESPONSABILITÉ POUR LES MISES À
+JOUR LORSQUE L’ERREUR A ÉTÉ CAUSÉE PAR VOUS (P.&nbsp;EX. SI ELLE NE RESPECTE
+PAS NOS DIRECTIVES DE MISES À JOUR) OU SI LG ELECTRONICS INC. A FAIT PREUVE DE
+NÉGLIGENCE. Dans certains cas limités, la mise à jour du logiciel ne sera
+proposée que par votre opérateur de réseau mobile et régie par votre relation
+contractuelle avec ce dernier.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>TRANSFERT DE
+LOGICIEL</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Si
+vous transférez les droits sur le logiciel&nbsp;LG accordés dans le présent
+CLUF à une tierce partie dans le cadre de la vente ou du transfert de l’appareil
+que le logiciel&nbsp;LG accompagnait, le transfert doit inclure l’ensemble du logiciel&nbsp;LG
+(y compris toutes les composantes, le support et les documents imprimés, les
+mises à niveau, le présent CLUF). Le transfert ne peut être un transfert
+indirect, comme une consignation. Avant le transfert, l’utilisateur final qui
+reçoit le logiciel&nbsp;LG doit accepter toutes les conditions du CLUF.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>EXCLUSION DE
+GARANTIE</span></b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>
+</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>VOUS
+RECONNAISSEZ QUE LE LOGICIEL&nbsp;LG N’A PAS ÉTÉ DÉVELOPPÉ POUR RÉPONDRE À VOS
+BESOINS INDIVIDUELS. LGE NE GARANTIT NI NE FAIT AUCUNE DÉCLARATION CONCERNANT
+LA DISPONIBILITÉ, L’UTILISATION, LA RAPIDITÉ, LA SÉCURITÉ, LA VALIDITÉ, L’EXACTITUDE
+OU LA FIABILITÉ DU LOGICIEL&nbsp;LG OU DE TOUT CONTENU QU’IL CONTIENT, OU LES
+RÉSULTATS DE LEUR UTILISATION. TOUT MATÉRIEL PRÉCHARGÉ, TÉLÉCHARGÉ OU OBTENU DE
+TOUTE AUTRE MANIÈRE PAR L’UTILISATION DU LOGICIEL&nbsp;LG SE FAIT À VOTRE
+PROPRE DISCRÉTION ET À VOS RISQUES. VOUS ÊTES SEUL RESPONSABLE DE TOUT DOMMAGE
+À VOTRE APPAREIL OU DE TOUTE PERTE DE DONNÉES RÉSULTANT DU TÉLÉCHARGEMENT D’UN
+TEL MATÉRIEL OU DE L’UTILISATION DU LOGICIEL&nbsp;LG. À MOINS QU’IL NE SOIT
+STIPULÉ SÉPARÉMENT DANS UNE GARANTIE LIMITÉE EXPRESSE ÉCRITE ACCOMPAGNANT VOTRE
+APPAREIL, LE LOGICIEL FOURNI PAR LGE EST FOURNI «&nbsp;TEL QUEL&nbsp;» ET SUR
+UNE BASE «&nbsp;TELLE QU’OFFERTE&nbsp;», SANS GARANTIE D’AUCUNE SORTE, EXPRESSE
+OU IMPLICITE. DANS TOUTE LA MESURE DU POSSIBLE, CONFORMÉMENT À LA LOI EN
+VIGUEUR, LGE DÉCLINE TOUTE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS, MAIS
+SANS S’Y LIMITER, LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE, D’ADÉQUATION À
+UN USAGE PARTICULIER, DE NON-VIOLATION OU D’AUTRES VIOLATIONS DES DROITS.
+CERTAINES JURIDICTIONS N’AUTORISENT PAS LES EXCLUSIONS OU LIMITATIONS DE LA
+DURÉE D’UNE GARANTIE IMPLICITE, DE SORTE QUE LES LIMITATIONS OU EXCLUSIONS
+CI-DESSUS PEUVENT NE PAS S’APPLIQUER. AUCUN CONSEIL OU RENSEIGNEMENT, QU’IL
+SOIT ORAL OU ÉCRIT, OBTENU PAR VOUS AUPRÈS DE LGE NE POURRA ÊTRE CONSIDÉRÉ
+COMME MODIFIANT LADITE CLAUSE DE NON-RESPONSABILITÉ OU COMME CRÉANT UNE
+QUELCONQUE GARANTIE.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:14.2pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>ACCÈS ET
+DISPONIBILITÉ; RESTRICTION D’ÂGE</span></b><span lang=FR-CA style='line-height:
+140%;font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Il
+est possible que LG doive interrompre ou ne plus offrir les services
+disponibles par l’entremise du logiciel&nbsp;LG, ou suspendre ou restreindre
+votre utilisation de la totalité ou de certaines parties du logiciel&nbsp;LG
+lorsque nous le jugeons raisonnablement nécessaire pour des raisons techniques,
+opérationnelles, de sécurité, légales ou réglementaires. La disponibilité des
+services liés à certains de ceux du logiciel&nbsp;LG peut dépendre de la
+performance de votre fournisseur de télécommunications tiers sur lequel LGE ne
+peut pas influer. Il vous incombe de prendre toutes les dispositions
+nécessaires pour avoir accès au logiciel&nbsp;LG. LGE n’accepte aucune
+responsabilité pour tout dommage ou perte que ces facteurs externes pourraient
+vous causer.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>En
+outre, certaines fonctions du logiciel&nbsp;LG peuvent nécessiter que votre
+appareil ait accès à Internet et peuvent être soumises à des restrictions
+imposées par votre opérateur de réseau mobile ou votre fournisseur d’accès
+Internet.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Vous
+devez être âgé d’au moins 14&nbsp;(quatorze) ans pour utiliser le logiciel&nbsp;LG
+ou y accéder. Si vous avez au moins 14&nbsp;(quatorze) ans, mais moins de 18&nbsp;(dix-huit)
+ans, vous devez avoir l’autorisation de vos parents ou de votre tuteur légal
+pour utiliser le logiciel&nbsp;LG et accepter le présent CLUF. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>LIMITATION
+DE LA RESPONSABILITÉ</span></b><span lang=FR-CA style='line-height:140%;
+font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>LGE
+NE SERA PAS RESPONSABLE DE TOUT DOMMAGE DE QUELQUE NATURE QUE CE SOIT LIÉ À L’UTILISATION
+OU À L’INCAPACITÉ D’UTILISER LE LOGICIEL&nbsp;LG, SON CONTENU OU SES LIENS, Y
+COMPRIS, MAIS SANS S’Y LIMITER, LES DOMMAGES ATTRIBUABLES OU LIÉS À DES ERREURS,
+OMISSIONS, INTERRUPTIONS, DÉFAUTS, RETARDS DE FONCTIONNEMENT OU DE
+TRANSMISSION, VIRUS, DÉFAILLANCE DE LA LIGNE, ET TOUT AUTRE DOMMAGE DIRECT,
+INDIRECT, SPÉCIAL, ACCESSOIRE, EXEMPLAIRE OU CONSÉCUTIF, MÊME SI LGE A ÉTÉ
+INFORMÉE DE LA POSSIBILITÉ DE TELS DOMMAGES. CERTAINES JURIDICTIONS N’AUTORISENT
+PAS L’EXCLUSION OU LA LIMITATION DES DOMMAGES ACCESSOIRES OU INDIRECTS, DE
+SORTE QUE LA LIMITATION OU L’EXCLUSION CI-DESSUS PEUT NE PAS S’APPLIQUER À
+VOUS. NONOBSTANT CE QUI PRÉCÈDE, LA RESPONSABILITÉ TOTALE DE LGE ENVERS VOUS
+POUR TOUTES LES PERTES, TOUS LES DOMMAGES ET TOUTES LES CAUSES D’ACTION, Y
+COMPRIS, MAIS SANS S’Y LIMITER, CEUX FONDÉS SUR UN CONTRAT, UN DÉLIT CIVIL OU
+AUTRE, DÉCOULANT DE VOTRE UTILISATION DE CET APPAREIL, DE SON LOGICIEL&nbsp;LG
+ET DES APPLICATIONS DE TIERCES PARTIES, NE DÉPASSERA PAS CENT DOLLARS
+AMÉRICAINS (100&nbsp;$). LES LIMITATIONS, EXCLUSIONS ET DÉNIS DE RESPONSABILITÉ
+QUI PRÉCÈDENT, Y COMPRIS LES ARTICLES&nbsp;6, 9 ET 10, S’APPLIQUENT DANS LA
+MESURE MAXIMALE AUTORISÉE PAR LA LOI EN VIGUEUR, MÊME SI UN RECOURS NE REMPLIT
+PAS SON OBJECTIF ESSENTIEL.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>LOI
+EN VIGUEUR; RÈGLEMENT DES LITIGES (NON APPLICABLE AUX RÉSIDENTS DES ÉTATS-UNIS)</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:40.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-20.0pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>(a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Sauf dans la
+mesure où la législation locale l’interdit, tout litige attribuable ou lié au
+présent CLUF, y compris toute question concernant son existence, sa validité ou
+sa résiliation, sera soumis et résolus définitivement par arbitrage&nbsp;: (i)
+selon les règles du Conseil coréen d’arbitrage commercial (lesquelles règles
+sont réputées être incorporées par référence dans la présente clause); (ii) où
+le nombre d’arbitres sera d’un (1); (iii) le siège, ou lieu légal, de l’arbitrage
+sera Séoul, en Corée du Sud; (iv) la langue à utiliser dans la procédure
+arbitrale sera l’anglais; (v) le droit en vigueur au contrat sera le droit
+matériel de la République de Corée.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:40.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-20.0pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>(b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Dans la
+mesure requise par la législation locale pour que l’arbitrage soit valide et
+juridiquement efficace en tant que moyen de règlement des litiges, y compris
+contre un consommateur : (i) sera réputé se reporter aux règles de l’organisme
+d’arbitrage le plus important (les «&nbsp;Règles d’arbitrage locales&nbsp;»)
+dans votre pays; et (iii) seront réputées faire référence à la capitale de
+votre pays.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:40.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-20.0pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>(c)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Vous ne
+pouvez résoudre les litiges avec nous que sur une base individuelle, et non en
+tant que demandeur ou membre du groupe dans une prétendue procédure collective
+ou représentative.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>CESSATION
+D’ACTIVITÉ</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Le
+présent CLUF est en vigueur jusqu’à sa résiliation. Vos droits en vertu de la
+présente licence prendront fin automatiquement sans préavis de la part de LGE
+si vous ne respectez pas l’une des conditions générales du présent CLUF. En
+outre, LGE, à sa seule discrétion, peut, à tout moment, suspendre tout service
+lié au CLUF ou y mettre fin. Nous nous réservons également le droit de modifier
+le CLUF à tout moment (y compris, mais sans s’y limiter, en limitant ou en
+interrompant certaines fonctionnalités liées au CLUF). À la résiliation dudit
+CLUF, vous devez cesser toute utilisation du logiciel&nbsp;LG liée à l’appareil.
+Vous pouvez résilier le présent CLUF en supprimant la totalité ou certaines
+parties du logiciel&nbsp;LG. Nous ne détiendrons aucune responsabilité, quelle
+qu’elle soit en raison de toute modification du CLUF ou de toute suspension ou
+résiliation de votre accès ou de votre utilisation des services liés au CLUF.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>RÉGIME
+LINGUISTIQUE</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Toute
+traduction du présent CLUF est effectuée pour répondre aux besoins locaux et,
+en cas de divergence entre la version anglaise et toute autre version, la
+version anglaise du présent CLUF prévaudra, dans la mesure où la loi locale de
+votre juridiction ne l’interdit pas.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>CONTRÔLE
+DES EXPORTATIONS</span></b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Vous
+reconnaissez que le logiciel&nbsp;LG est soumis aux restrictions d’exportation
+de divers pays. Vous acceptez de respecter toutes les lois internationales et
+nationales en vigueur qui s’appliquent au logiciel&nbsp;LG, y compris toutes
+les lois et réglementations en matière de restriction des exportations.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>13.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>INTÉGRALITÉ
+DE L’ACCORD; DIVISIBILITÉ; DIVERS</span></b><span lang=FR-CA style='line-height:
+140%;font-family:"Arial",sans-serif'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Le
+présent CLUF constitue l’intégralité de l’accord entre vous et LGE concernant
+le logiciel&nbsp;LG et remplace toutes les communications, propositions et
+représentations antérieures ou contemporaines, orales ou écrites, concernant le
+logiciel&nbsp;LG ou tout autre sujet couvert par le présent CLUF. Si une
+disposition du présent CLUF est jugée nulle, invalide, inapplicable ou
+illégale, les autres dispositions resteront pleinement en vigueur. Le
+téléchargement des mises à jour, l’accès au logiciel&nbsp;LG et son utilisation
+dépendent de la connexion de données de votre appareil.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>14.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>RÉSOLUTION
+DES LITIGES POUR LES RÉSIDENTS DES ÉTATS-UNIS</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(a)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>En général.
+Dans l’intérêt de la résolution des litiges entre vous et LGE de la manière la
+plus rapide et la plus rentable, LGE et vous acceptez que tout litige survenant
+dans le cadre du présent CLUF soit résolu par un arbitrage contraignant. L’arbitrage
+est plus informel qu’un procès devant un tribunal. L’arbitrage fait appel à un
+arbitre neutre au lieu d’un juge ou d’un jury, peut permettre une communication
+préalable plus limitée qu’au tribunal et peut être soumis à un examen très
+limité par les tribunaux. Les arbitres peuvent accorder les mêmes dommages et
+intérêts qu’un tribunal. Notre accord d’arbitrage des litiges comprend, sans s’y
+limiter, toutes les réclamations attribuables ou liées à tout aspect du présent
+CLUF, qu’elles soient fondées sur un contrat, un délit, un statut, une fraude,
+une fausse déclaration ou toute autre théorie juridique, et indépendamment du
+fait que les réclamations surviennent pendant ou après la résiliation du
+présent CLUF. VOUS COMPRENEZ ET ACCEPTEZ QU’EN CONCLUANT LE PRÉSENT CLUF, VOUS
+ET LGE RENONCEZ CHACUN AU DROIT À UN PROCÈS DEVANT UN JURY OU À LA
+PARTICIPATION À UNE ACTION COLLECTIVE.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(b)<span style='font:7.0pt "Times New Roman"'> </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Exceptions.
+Nonobstant la section&nbsp;16(a), nous convenons tous les deux que rien dans
+les présentes ne sera considéré comme une renonciation, un empêchement ou une
+limitation de l’un ou l’autre de nos droits&nbsp;: (i)&nbsp;d’intenter une
+action individuelle devant un tribunal des petites créances; (ii)&nbsp;de
+poursuivre des actions d’exécution par l’intermédiaire d’agences fédérales,
+étatiques ou locales applicables lorsque de telles actions sont disponibles;
+(iii)&nbsp;de demander une mesure injonctive devant un tribunal; ou (iv)&nbsp;d’intenter
+une action devant un tribunal pour traiter des réclamations pour violation de
+la propriété intellectuelle.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(c)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Arbitre.
+Tout arbitrage entre vous et LGE sera régi par les «&nbsp;Règles AAA&nbsp;» de
+l’American Arbitration Association («&nbsp;AAA&nbsp;»), comme modifié par le
+présent CLUF, et sera administré par l’AAA. Les règles de l’AAA et les
+formulaires de dépôt sont disponibles en ligne sur le site www.adr.org, en
+appelant l’AAA au 1&nbsp;800&nbsp;778-7879, ou en communiquant avec LGE.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(d)<span style='font:7.0pt "Times New Roman"'> </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Notification;
+procédure. Une partie qui a l’intention de recourir à l’arbitrage doit d’abord
+envoyer une notification écrite du litige à l’autre partie, par courrier
+certifié ou Federal Express (signature requise), ou dans le cas où nous n’avons
+pas d’adresse physique dans nos dossiers, par courrier électronique («&nbsp;notification&nbsp;»).
+L’adresse de notification de LGE est la suivante&nbsp;: LG Electronics, USA, inc.
+Attn&nbsp;: Legal Department-Arbitration, 1000 Sylvan Avenue Englewood Cliffs,
+NJ 07632. L’avis doit&nbsp;: (i)&nbsp;décrire la nature et le fondement de la
+réclamation ou du litige; (ii)&nbsp;énoncer la réparation précise demandée («&nbsp;demande&nbsp;»).
+Nous acceptons de fournir des efforts de bonne foi pour résoudre la réclamation
+directement, mais si nous ne parvenons pas à un accord dans les 30&nbsp;jours
+suivant la réception de l’avis, vous ou LGE pourrez entamer une procédure d’arbitrage.
+Au cours de l’arbitrage, le montant de toute offre de règlement faite par vous
+ou par LGE ne sera divulgué à l’arbitre qu’après qu’il a rendu une décision et
+une sentence définitives, le cas échéant.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(e)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Frais. Dans
+le cas où vous entamez une procédure d’arbitrage conformément au présent CLUF,
+LGE vous remboursera le paiement des frais de dépôt, à moins que votre demande
+ne soit supérieure à 25&nbsp;000&nbsp;$, auquel cas le paiement des frais sera
+décidé par les règles de l’AAA. Toute audience d’arbitrage aura lieu à un
+endroit qui sera convenu, à condition que si la réclamation est de 10&nbsp;000&nbsp;$
+ou moins, vous puissiez choisir si l’arbitrage sera mené&nbsp;: (i)&nbsp;uniquement
+sur la base des documents soumis à l’arbitre; (ii)&nbsp;par une audience
+téléphonique sans comparution; ou (iii)&nbsp;par une audience en personne comme
+il est établi par les règles de l’AAA dans le comté (ou la paroisse) de votre
+adresse de facturation. Si l’arbitre estime que la substance de votre
+réclamation ou la réparation demandée dans la demande est frivole ou présentée
+dans un but inapproprié (selon les normes énoncées dans la règle fédérale de
+procédure civile&nbsp;11[b]), le paiement de tous les frais sera régi par les règles
+de l’AAA. Dans ce cas, vous acceptez de rembourser à LGE toutes les sommes qu’elle
+a précédemment déboursées et qui constituent par ailleurs votre obligation de
+paiement en vertu des règles de l’AAA. Quelle que soit la manière dont l’arbitrage
+est mené, l’arbitre doit rendre une décision écrite motivée, suffisante pour
+expliquer les constatations et conclusions essentielles sur lesquelles sont
+fondées la décision et la sentence, le cas échéant. L’arbitre peut prendre des
+décisions et résoudre les différends concernant le paiement et le remboursement
+des honoraires ou des frais à tout moment de la procédure et sur demande de l’une
+ou l’autre des parties, effectuée dans les 14&nbsp;jours de la décision de l’arbitre
+sur le bien-fondé de la plainte.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(f)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Pas d’action
+collective. VOUS ET LGE CONVENEZ QUE CHACUN D’ENTRE VOUS PEUT PRÉSENTER DES
+RÉCLAMATIONS À L’ENCONTRE DE L’AUTRE UNIQUEMENT À TITRE INDIVIDUEL ET NON EN
+TANT QUE PLAIGNANT OU MEMBRE D’UN GROUPE DANS LE CADRE D’UNE PRÉTENDUE
+PROCÉDURE COLLECTIVE OU REPRÉSENTATIVE. En outre, à moins que vous et LGE n’en
+conveniez autrement, l’arbitre ne peut pas consolider les réclamations de plus
+d’une personne et ne peut pas non plus présider une quelconque forme de
+procédure représentative ou collective.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(g)<span style='font:7.0pt "Times New Roman"'> </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Se retirer.
+Vous pouvez choisir de ne pas participer à cette procédure de règlement des
+litiges. Si vous vous retirez, ni vous ni LG ne pouvez exiger que l’autre
+participe à une procédure d’arbitrage. Pour vous désengager, vous devez envoyer
+une notification à LG au plus tard 30&nbsp;jours civils à compter de la date d’achat
+du produit par le premier acheteur consommateur&nbsp;: (i)&nbsp;en envoyant un
+courriel à [optout@lge.com], avec pour objet&nbsp;: «&nbsp;Arbitration Opt
+Out&nbsp;»; ou (ii)&nbsp;en appelant le [1&nbsp;800&nbsp;980-2973]. Vous devez
+inclure dans l’option de refus le courriel ou le téléphone&nbsp;: (a)&nbsp;votre
+nom et votre adresse; (b)&nbsp;la date à laquelle le service a été activé; (c)&nbsp;la
+date à laquelle le service a été résilié; (d)&nbsp;le nom ou le numéro de
+modèle du produit; (e)&nbsp;l’IMEI ou le MEID ou le numéro de série, selon le
+cas (l’IMEI ou le MEID ou le numéro de série peut être trouvé en retirant la
+batterie de votre appareil comme il est expliqué dans le manuel d’utilisation).
+Le courriel et le téléphone sont les deux seules formes de notification qui
+seront efficaces pour se retirer de cette procédure de résolution des litiges.
+Si vous ne vous désengagez pas, vous acceptez toutes les conditions de la
+garantie limitée, y compris la clause d’arbitrage obligatoire décrite
+ci-dessus.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:6.4pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-6.4pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>(h)<span style='font:7.0pt "Times New Roman"'> </span></span></b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Modifications.
+Dans le cas où LGE apporterait une modification future à cette clause d’arbitrage
+(autre qu’une modification de l’adresse de notification de LGE), vous pouvez
+rejeter cette modification en nous envoyant un avis écrit dans les 30&nbsp;jours
+suivant la modification de l’adresse de notification de LGE, auquel cas votre
+compte chez LGE sera immédiatement résilié et cette clause d’arbitrage, telle
+qu’en vigueur immédiatement avant les modifications que vous rejetez survivra.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-14.2pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:21.3pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-21.3pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>15.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Droits
+restreints des utilisateurs finaux du gouvernement des États-Unis</span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:7.1pt;margin-bottom:.0001pt;text-align:left;
+line-height:140%;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Le
+logiciel&nbsp;LG est concédé sous licence en vertu des présentes uniquement
+avec des «&nbsp;droits restreints&nbsp;» et en tant qu’«&nbsp;articles
+commerciaux&nbsp;», soit un «&nbsp;logiciel commercial&nbsp;» et une
+«&nbsp;documentation de logiciel commercial&nbsp;» avec uniquement les droits
+accordés à tous les autres utilisateurs finaux conformément aux conditions du
+présent CLUF. Tous les produits ne sont fournis qu’avec des «&nbsp;droits
+restreints&nbsp;» avec seulement les droits qui sont accordés à tous les autres
+utilisateurs finaux conformément aux conditions générales contenues dans le
+présent document. Tous les logiciels et produits visés par les présentes sont
+fournis conformément à la réglementation FAR (Federal Acquisition Regulation)&nbsp;52.227.19.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:18.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-18.0pt;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=FR-CA style='line-height:140%;font-family:
+"Arial",sans-serif'>16.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Digital
+Millennium Copyright Act </span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Le
+Digital Millennium Copyright Act de 1998 (le « DMCA ») offre un recours aux
+détenteurs de droits d’auteur qui estiment que le matériel s’affichant sur
+Internet enfreint leurs droits en vertu de la loi américaine sur les droits d’auteur.
+Si vous estimez de bonne foi que le matériel publié sur le logiciel LG enfreint
+vos droits d’auteur, vous (ou votre agent) pouvez nous envoyer une «
+notification de violation présumée » demandant que le matériel soit supprimé ou
+que l’accès à ce matériel soit bloqué. L’avis doit contenir les informations
+suivantes :</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>•            La
+signature physique ou électronique d’une personne autorisée à agir au nom du
+propriétaire des œuvres prétendument enfreintes ;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>•            L’identification
+de l’œuvre protégée par des droits d’auteur qui aurait été violée (ou, si
+plusieurs œuvres protégées par des droits d’auteur situées sur ce site web sont
+couvertes par une seule notification, une liste représentative de ces œuvres) ;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>•            Identification
+du matériel spécifique supposé être en infraction ou faire l’objet d’une
+activité en infraction, et informations raisonnablement suffisantes pour nous
+permettre de localiser le matériel sur ce site web ;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>•            Votre
+nom, votre adresse, votre numéro de téléphone et votre adresse électronique (le
+cas échéant) ;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>•            Une
+déclaration indiquant que vous pensez de bonne foi que l’utilisation du
+matériel de la manière faisant l’objet de la plainte n’est pas autorisée par le
+détenteur des droits d’auteur, son agent ou la loi ; et</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>•            Une
+déclaration selon laquelle les informations contenues dans la notification sont
+exactes et, sous peine de parjure, que la partie plaignante est autorisée à
+agir au nom du titulaire d’un droit exclusif prétendument enfreint.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Si
+vous estimez de bonne foi qu’un avis de violation de droits d’auteur a été
+déposé à tort contre vous, le DMCA vous autorise à nous envoyer un contre-avis.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:140%;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=FR-CA style='line-height:140%;font-family:"Arial",sans-serif'>Les
+avis et contre-avis doivent répondre aux exigences légales en vigueur imposées
+par le DMCA ; voir http://www.loc.gov/copyright/ pour plus de détails. Les avis
+et contre-avis relatifs à ce site web doivent nous être envoyés à LG Twin
+Towers, 128, Yeoui-daero, Yeongdeungpo-gu, Séoul, République de Corée (Tél.
+Non. : 02-3777-1114 (Corée)). Consultez votre conseiller juridique et
+reportez-vous à l’article 512 du 17 U.S.C. avant de déposer un avis ou un
+contre-avis, car le DMCA prévoit des sanctions en cas de fausse déclaration.</span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt'><b><span lang=FR-CA
+style='line-height:115%;font-family:"Arial",sans-serif'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><b><span
+lang=FR-CA style='line-height:115%;font-family:"Arial",sans-serif'>17.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+lang=FR-CA style='line-height:115%;font-family:"Arial",sans-serif'>Communiquer
+avec LGE à propos dudit contrat de licence de logiciel pour utilisateur final</span></b></p>
+
+<p class=MsoNormal><span lang=FR-CA style='line-height:115%;font-family:"Arial",sans-serif'>Si
+vous avez des questions ou des commentaires sur le présent CLUF, veuillez nous
+contacter à notre adresse électronique officielle[lg-gramLink@lge.com].</span></p>
+
+</div>
+
+</body>
+
+</html>

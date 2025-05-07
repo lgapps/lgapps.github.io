@@ -11,7 +11,8 @@
 
             if (/android/i.test(userAgent)) {
                 // Android device detected
-                window.location.href = 'market://details?id=com.lge.photosync' + queryString;
+                //window.location.href = 'market://details?id=com.lge.photosync' + queryString;
+                window.location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end';
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // iOS device detected
                 window.location.href = 'https://apps.apple.com/kr/app/LGgramLink/id6444247964' + queryString;

@@ -13,12 +13,12 @@
                 // Android device detected
                 //window.location.href = 'market://details?id=com.lge.photosync' + queryString;
                 
-                setTimeout(
-                      function() {
-                          if ((new Date()).getTime() - visitedAt < 2000) {
-                                location.href = 'market://details?id=com.lge.photosync' + queryString;
-                          }
-                       }, 500);
+                // setTimeout(
+                //       function() {
+                //           if ((new Date()).getTime() - visitedAt < 2000) {
+                //                 location.href = 'market://details?id=com.lge.photosync' + queryString;
+                //           }
+                //        }, 500);
                 
                setTimeout(function() { 
                        location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';

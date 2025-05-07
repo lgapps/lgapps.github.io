@@ -13,15 +13,15 @@
                 // Android device detected
                 var visitedAt = (new Date()).getTime();
                 
+                setTimeout(function() { 
+                    location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
+                }, 0);
+                
                 setTimeout(function() {
                     if ((new Date()).getTime() - visitedAt < 2000) {
                         location.href = 'market://details?id=com.lge.photosync' + queryString;
                     }
                 }, 1000);
-                
-                setTimeout(function() { 
-                    location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
-                }, 0);
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // iOS device detected
                 window.location.href = 'https://apps.apple.com/kr/app/LGgramLink/id6444247964' + queryString;

@@ -8,6 +8,7 @@
         function redirectBasedOnDevice() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
+            var visitedAt = (new Date()).getTime();
 
             if (/android/i.test(userAgent)) {
                 // Android device detected
@@ -26,7 +27,6 @@
             } else if (/iPad|iPhone|iPod/.test(userAgent)) {
                 // iOS device detected
                 setTimeout(
-                    var visitedAt = (new Date()).getTime();
                     function() {
                         if ((new Date()).getTime() - visitedAt < 2000) {
                             location.href = "https://apps.apple.com/kr/app/LGgramLink/id6444247964" + queryString;

@@ -8,13 +8,13 @@
         function redirectBasedOnDevice() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
+            var visitedAt = (new Date()).getTime();
 
             if (/android/i.test(userAgent)) {
                 // Android device detected
                 //window.location.href = 'market://details?id=com.lge.photosync' + queryString;
                 
                 setTimeout(
-                    var visitedAt = (new Date()).getTime();
                       function() {
                           if ((new Date()).getTime() - visitedAt < 2000) {
                                 location.href = 'market://details?id=com.lge.photosync' + queryString;
@@ -24,16 +24,16 @@
                setTimeout(function() { 
                        location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
                     }, 0);
-            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            } else if (/iPad|iPhone|iPod/.test(userAgent)) {
                 // iOS device detected
                 setTimeout(function() {
-                    if ((new Date()).getTime() - visitedAt < 2000) {
-                        location.href = "https://apps.apple.com/kr/app/LGgramLink/id6444247964" + queryString;
+                    if ((new Date()).getTime() - visitedAt < 3000) {
+                        location.href = "itms-apps://itunes.apple.com/app/id6444247964";
                     }
-                }, 500);
+                }, 2500);
                 
                 setTimeout(function() {
-                    location.href = "gramlink://";
+                    location.href = "gramlink://" + queryString;
                 }, 0);
             } else {
                 // Other devices

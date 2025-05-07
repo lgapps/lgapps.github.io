@@ -25,11 +25,13 @@
                     }, 0);
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // iOS device detected
-                setTimeout(function() {
-                    if ((new Date()).getTime() - visitedAt < 2000) {
-                        location.href = "https://apps.apple.com/kr/app/LGgramLink/id6444247964" + queryString;
-                    }
-                }, 500);
+                setTimeout(
+                    var visitedAt = (new Date()).getTime();
+                    function() {
+                        if ((new Date()).getTime() - visitedAt < 2000) {
+                            location.href = "https://apps.apple.com/kr/app/LGgramLink/id6444247964" + queryString;
+                        }
+                    }, 500);
                 
                 setTimeout(function() {
                     location.href = "gramlink://";

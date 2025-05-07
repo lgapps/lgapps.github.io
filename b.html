@@ -13,10 +13,12 @@
                 // Android device detected
                 var visitedAt = (new Date()).getTime();
                 
-                setTimeout(function() { 
+                // Try to open the app
+                setTimeout(function() {
                     location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
                 }, 0);
                 
+                // If the app is not installed, redirect to Google Play Store
                 setTimeout(function() {
                     if ((new Date()).getTime() - visitedAt < 2000) {
                         location.href = 'market://details?id=com.lge.photosync' + queryString;

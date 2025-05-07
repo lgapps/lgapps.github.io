@@ -16,12 +16,12 @@
                 window.setTimeout(
                       function() {
                           if ((new Date()).getTime() - visitedAt < 2000) {
-                               document.location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end';
+                               window.location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end';
                           }
                        }, 500);
                 
                 window.setTimeout(function() { 
-                        document.location.href = 'market://details?id=com.lge.photosync' + queryString;
+                        window.location.href = 'market://details?id=com.lge.photosync' + queryString;
                     }, 0);
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // iOS device detected

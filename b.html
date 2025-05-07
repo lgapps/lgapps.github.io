@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Detection Redirect</title>
+    <script>
+        function redirectBasedOnDevice() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
+
+            if (/android/i.test(userAgent)) {
+                // Android device detected
+                var visitedAt = (new Date()).getTime();
+                
+                setTimeout(function() {
+                    if ((new Date()).getTime() - visitedAt < 2000) {
+                        location.href = 'market://details?id=com.lge.photosync' + queryString;
+                    }
+                }, 1000);
+                
+                setTimeout(function() { 
+                    location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
+                }, 0);
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // iOS device detected
+                window.location.href = 'https://apps.apple.com/kr/app/LGgramLink/id6444247964' + queryString;
+            } else {
+                // Other devices
+                window.location.href = 'http://example.com/default' + queryString;
+            }
+        }
+
+        // Run the device detection and redirect function
+        redirectBasedOnDevice();
+    </script>
+</head>
+<body>
+    <p>Redirecting based on your device...</p>
+</body>
+</html>

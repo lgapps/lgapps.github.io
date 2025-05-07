@@ -28,12 +28,12 @@
                 // iOS device detected
                 setTimeout(function() {
                     if ((new Date()).getTime() - visitedAt < 2000) {
-                        location.href = "https://apps.apple.com/kr/app/LGgramLink/id6444247964" + queryString;
+                        window.location.href = "https://apps.apple.com/kr/app/LGgramLink/id6444247964" + queryString;
                     }
                 }, 500);
                 
                 setTimeout(function() {
-                    location.href = "gramlink://" + queryString;
+                    window.location.href = "gramlink://" + queryString;
                 }, 0);
             } else {
                 // Other devices

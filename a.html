@@ -13,15 +13,15 @@
                 // Android device detected
                 //window.location.href = 'market://details?id=com.lge.photosync' + queryString;
                 
-                window.setTimeout(
+                setTimeout(
                       function() {
                           if ((new Date()).getTime() - visitedAt < 2000) {
-                               window.location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end';
+                               location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
                           }
                        }, 500);
                 
-                window.setTimeout(function() { 
-                        window.location.href = 'market://details?id=com.lge.photosync' + queryString;
+               setTimeout(function() { 
+                        location.href = 'market://details?id=com.lge.photosync' + queryString;
                     }, 0);
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // iOS device detected

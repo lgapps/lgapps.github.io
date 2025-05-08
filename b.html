@@ -35,7 +35,7 @@
                 document.addEventListener(visibilityChange, handleVisibilityChange, false);
 
                 // Try to open the app
-                location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;S.textData=helloworldaa;end;';
+                location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;S.textData=${queryString};end;';
 
                 // If the app is not installed, redirect to Google Play Store
                 var fallbackTimeout = setTimeout(function() {

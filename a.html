@@ -8,6 +8,45 @@
         function redirectBasedOnDevice() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
+
+            if (/android/i.test(userAgent)) {
+                // Android device detected
+                // Android device detected
+                var visitedAt = (new Date()).getTime();
+                var hidden, visibilityChange; 
+
+                if (typeof document.hidden !== "undefined") {
+                    hidden = "hidden";
+                    visibilityChange = "visibilitychange";
+                } else if (typeof document.msHidden !== "undefined") {
+                    hidden = "msHidden";
+                    visibilityChange = "msvisibilitychange";
+                } else if (typeof document.webkitHidden !== "undefined") {
+                    hidden = "webkitHidden";
+                    visibilityChange = "webkitvisibilitychange";
+                }
+
+                var handleVisibilityChange = function() {
+                    if (!document[hidden]) {
+                        clearTimeout(fallbackTimeout);
+                    }
+                };
+
+                document.addEventListener(visibilityChange, handleVisibilityChange, false);
+
+                // Try to open the app
+                // location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
+                location.href = 'test_and://test?when=20250508&message=blahblah';
+
+                // If the app is not installed, redirect to Google Play Store
+                var fallbackTimeout = setTimeout(function() {
+                    location.href = 'market://details?id=com.lge.photosync' + queryString;
+                }, 2000);
+
+
+                
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
             var visitedAt = (new Date()).getTime();
 
             if (/android/i.test(userAgent)) {

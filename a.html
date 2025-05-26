@@ -35,34 +35,12 @@
                 document.addEventListener(visibilityChange, handleVisibilityChange, false);
 
                 // Try to open the app
-                // location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
-                location.href = 'test_and://test?when=20250508&message=blahblah';
+                location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;S.textData=' + queryString + ';end;';
 
                 // If the app is not installed, redirect to Google Play Store
                 var fallbackTimeout = setTimeout(function() {
                     location.href = 'market://details?id=com.lge.photosync' + queryString;
                 }, 2000);
-
-
-                
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
-            var visitedAt = (new Date()).getTime();
-
-            if (/android/i.test(userAgent)) {
-                // Android device detected
-                //window.location.href = 'market://details?id=com.lge.photosync' + queryString;
-                
-                setTimeout(
-                      function() {
-                          if ((new Date()).getTime() - visitedAt < 2000) {
-                                location.href = 'market://details?id=com.lge.photosync' + queryString;
-                          }
-                       }, 1000);
-                
-               setTimeout(function() { 
-                       location.href = 'intent://test#Intent;scheme=test_and;package=com.lge.photosync;end;';
-                    }, 0);
             } else if (/iPad|iPhone|iPod/.test(userAgent)) {
                 // iOS device detected
                 setTimeout(function() {

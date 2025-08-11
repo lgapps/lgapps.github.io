@@ -9,7 +9,7 @@
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             var queryString = encodeURIComponent(window.location.hash.substring(1)); // 현재 URL의 쿼리 문자열을 가져옵니다.
 
-            if (/android/i.test(userAgent) || /linux/.i.test(userAgent)) {
+            if (/android/i.test(userAgent)) {
                 // Android device detected
                 // Android device detected
                 var visitedAt = (new Date()).getTime();
@@ -55,7 +55,7 @@
                 }, 0);
             } else {
                 // Other devices
-                window.location.href = 'http://example.com/default' + userAgent;
+                window.location.href = 'http://example.com/default' + queryString;
             }
         }
 

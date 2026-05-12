@@ -42,7 +42,7 @@
                 // var fallbackTimeout = setTimeout(function () {
                 location.href = 'market://details?id=com.lge.photosync';// + queryString;
                 // }, 2000);
-            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            } else if ((/iPad|iPhone|iPod/.test(userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) && !window.MSStream) {
                 // iOS device detected
                 window.location.href = 'https://apps.apple.com/kr/app/lg-gram-link/id6472481068';
             } else {

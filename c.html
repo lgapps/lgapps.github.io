@@ -8,7 +8,7 @@
     <script>
         function redirectBasedOnDevice() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
+            // var queryString = window.location.search; // 현재 URL의 쿼리 문자열을 가져옵니다.
 
             if (/android/i.test(userAgent)) {
                 // Android device detected
@@ -40,7 +40,7 @@
 
                 // // If the app is not installed, redirect to Google Play Store
                 // var fallbackTimeout = setTimeout(function () {
-                    location.href = 'market://details?id=com.lge.photosync' + queryString;
+                location.href = 'market://details?id=com.lge.photosync';// + queryString;
                 // }, 2000);
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 // iOS device detected
